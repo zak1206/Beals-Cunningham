@@ -542,7 +542,7 @@ class ShipEngineHandler implements ShippingInterface
         return false;
     }
 
-    public function RequestDemoModeLTLFreightPickup($toName, $toAddr, $toAddr2, $toCity, $toState, $toZip, $phone, $email, $shipments, $description = 'DEMO LTL FREIGHT PICKUP TESTING', $instructions = 'TEST PICKUP INSTRUCTIONS.', $service_code = 'stnd',): array
+    public function RequestDemoModeLTLFreightPickup($toName, $toAddr, $toAddr2, $toCity, $toState, $toZip, $phone, $email, $shipments): array
     {
         $api_key = $this->Get_API_Key();
         $carrier_id = $this->GetSandBoxLTLCarrierCode();
@@ -550,11 +550,6 @@ class ShipEngineHandler implements ShippingInterface
         $shippingData = json_decode($_COOKIE['shippingData'], true);
         $carrier_quote_id = $shippingData['quote_id']['carrier_quote_id'];
         $path = '';
-        $currentDate = new DateTime();
-        $currentDate->modify('+1 day');
-        $ship_date = $currentDate->format("Y-m-d");
-        $currentDate->modify('+2 day');
-        $delivery_date = $currentDate->format("Y-m-d");
 
         //Schedule Pickup
         foreach ($shipments as $shipment) {
@@ -572,26 +567,26 @@ class ShipEngineHandler implements ShippingInterface
                 CURLOPT_POSTFIELDS => '{
             "carrier": {
                 "test": true,
-                "instructions": "' . $instructions . '"
+                "instructions": "deliver to submarine hatch"
                 },
             "options": [
               {
                 "code": "HAZ",
                 "attributes": {
-                  "name": "' . $toName . '",
-                  "phone": "' . $phone . '"
+                  "name": "Hazardous Contact Name",
+                  "phone": "7704865900"
                 }
               }
             ],
             "shipment": {
-                "pickup_date": "' . $ship_date . '",
+                "pickup_date": "2023-10-23",
                 "pickup_window": {
                 "start_at": "08:00:00-06:00",
                 "end_at": "17:00:00-06:00",
                 "closing_at": "17:00:00-06:00"
               },
-              "delivery_date": "' . $delivery_date . '",
-              "service_code": "' . $service_code . '",
+              "delivery_date": "2023-10-24",
+              "service_code": "stnd",
               "bill_to": {
                 "account": "123456",
                 "address": {
@@ -629,11 +624,11 @@ class ShipEngineHandler implements ShippingInterface
                 }
               ],
               "requested_by": {
-                "company_name": "Stellar Equipment",
+                "company_name": "Example Corp.",
                 "contact": {
-                  "email": "support@bealscunningham.com",
-                  "name": "Mike Cunningham",
-                  "phone_number": "405-478-4752"
+                  "email": "johndoe@test.com",
+                  "name": "John Doe",
+                  "phone_number": "111-111-1111"
                 }
               },
               "ship_from": {
@@ -1030,10 +1025,25 @@ class ShipEngineHandler implements ShippingInterface
                             }
                         }
 
-                        //Add Item To Shipments Array
+                        $new_cart_item = array(
+                            'uniqId' => $item['uniqId'],
+                            'id' => $item['id'],
+                            'name' => $item['name'],
+                            'length' => $length,
+                            'width' => $width,
+                            'height' => $height,
+                            'weight' => $weight,
+                            'weight_total' => $weightTotal,
+                            'ship_type' => $item['ship_type'],
+                            'price' => $item['price'],
+                            'qty' => $count
+                        );
+                        array_push($newCartItems, $new_cart_item);
+                        array_push($current_shipment_items, $new_cart_item);
                         array_push($shipments_array, $current_shipment_items);
                         //Reset Current Shipment Items
                         $current_shipment_items = array();
+                        //Add New Cart ITem
                     } else {
                         //Add Item To New Cart tems
                         $new_cart_item = array(
@@ -1133,7 +1143,7 @@ class ShipEngineHandler implements ShippingInterface
         return number_format(floatval($shipping_total), 2, '.', ',');
     }
 
-    public function CreateCartShippingLabels($toName, $toAddr, $toAddr2, $toCity, $toState, $toZip, $phone, $email, $service_code = "stdn", $demo = true): float
+    public function CreateCartShippingLabels($toName, $toAddr, $toAddr2, $toCity, $toState, $toZip, $phone, $email, $service_code = "stdn", $demo = true): array
     {
         include('config.php');
         $shipment_weight_limit = 50;
@@ -1150,6 +1160,7 @@ class ShipEngineHandler implements ShippingInterface
         $current_shipment_width = 0;
         $current_shipment_height = 0;
         $current_shipment_items = array();
+        $labels_output = array('labels' => array());
 
         //Get CartData COOKIE
         $cartDataJSON = json_decode($_COOKIE['cartData'], true);
@@ -1191,78 +1202,32 @@ class ShipEngineHandler implements ShippingInterface
                 //Add each items weight to $current_shipment_weight
                 $current_shipment_weight = floatval($current_shipment_weight) + floatval($weight_with_qty);
 
+                //Add Item To New Cart tems
+                $new_cart_item = array(
+                    'uniqId' => $item['uniqId'],
+                    'id' => $item['id'],
+                    'name' => $item['name'],
+                    'length' => $length,
+                    'width' => $width,
+                    'height' => $height,
+                    'weight' => $weight,
+                    'total_length' => $length_with_qty,
+                    'total_width' => $width_with_qty,
+                    'total_height' => $height_with_qty,
+                    'weight_total' => $weight_with_qty,
+                    'ship_type' => $item['ship_type'],
+                    'price' => $item['price'],
+                    'qty' => $item['qty']
+                );
 
-                //Check Individual Items - If Under Weight Limit, 
-                if (doubleval($weight) < doubleval($shipment_weight_limit)) {
-                    //Check If Total Weight Exceeds Limit
-                    if (doubleval($totalWeight) > doubleval($shipment_weight_limit)) {
-                        //If So -> Push To Shipment Array
-                        //Add Item To New Cart tems
-                        $weightTotal = 0;
-                        $count = 1;
-                        //Loop Through Multiplying weight X qty numbers to see how many can fit in a package
-                        for ($i = 1; $i < intval($item['qty']); $i++) {
-                            if (doubleval($weight) * intval($i) < doubleval($shipment_weight_limit)) {
-                                $count = intval($i);
-                                $weightTotal = doubleval($weight) * intval($i);
-                            }
-                        }
-
-                        //Add Item To Shipments Array
-                        array_push($shipments_array, $current_shipment_items);
-                        //Reset Current Shipment Items
-                        $current_shipment_items = array();
-                    } else {
-                        //Add Item To New Cart tems
-                        $new_cart_item = array(
-                            'uniqId' => $item['uniqId'],
-                            'id' => $item['id'],
-                            'name' => $item['name'],
-                            'length' => $length,
-                            'width' => $width,
-                            'height' => $height,
-                            'weight' => $weight,
-                            'total_length' => $length_with_qty,
-                            'total_width' => $width_with_qty,
-                            'total_height' => $height_with_qty,
-                            'weight_total' => $weight_with_qty,
-                            'ship_type' => $item['ship_type'],
-                            'price' => $item['price'],
-                            'qty' => $item['qty']
-                        );
-                        array_push($newCartItems, $new_cart_item);
-                        //If Not -> 
-                        array_push($current_shipment_items, $new_cart_item);
-                    }
-                } else {
-                    $new_cart_item = array(
-                        'uniqId' => $item['uniqId'],
-                        'id' => $item['id'],
-                        'name' => $item['name'],
-                        'length' => $length,
-                        'width' => $width,
-                        'height' => $height,
-                        'weight' => $weight,
-                        'total_length' => $length_with_qty,
-                        'total_width' => $width_with_qty,
-                        'total_height' => $height_with_qty,
-                        'weight_total' => $weight_with_qty,
-                        'ship_type' => $item['ship_type'],
-                        'price' => $item['price'],
-                        'qty' => $item['qty']
-                    );
-                    array_push($newCartItems, $new_cart_item);
-                    //Add Shipment To Generate Label For
-                    array_push($shipments_array, $new_cart_item);
-                    $current_shipment_items = array();
-                }
-
+                array_push($newCartItems, $new_cart_item);
+                array_push($shipments_array, $new_cart_item);
                 //Check If Over Weight Limit
             } catch (Exception $ex) {
                 $error = true;
                 $critical_error = false; //Not a Critical Error We Can Still Calculate and Proceed By Removing Item From Cart
                 $error_msg = "Estimate Exception While Looping Through Cart Items - Exception: " . $ex->getMessage();
-                //break;
+                //break;.
             }
         }
 
@@ -1270,23 +1235,26 @@ class ShipEngineHandler implements ShippingInterface
         array_push($newCartData, $newCartItems);
         $newCartDataJSON = json_encode($newCartData, true);
         //setcookie('cartData', $newCartDataJSON, 0, '/');
-        echo var_dump($shipments_array);
 
-        //Loop Through Each Shipment
+        //Calculate Total Shipping From Total Weight
+        if (floatval($totalWeight) > floatval($shipment_weight_limit)) {
+            //LTL Quote
+            if ($demo) {
+                $bol_path = $this->RequestDemoModeLTLFreightPickup($toName, $toAddr, $toAddr2, $toCity, $toState, $toZip, $phone, $email, $shipments_array);
 
-
-        foreach ($shipment_array as $shipment) {
-            if (doubleval($shipment['weight']) > doubleval($shipment_weight_limit)) {
-                //If Individual Weight > Max Weight Limit For Carrier Package
-                //Request LTL BOL Label
+                array_push($labels_output['labels'], $bol_path);
             } else {
-                //Else Individual Weight < Max Weight Limit For Carrier
-                //Request Carrier Shipment Package
-                $label_array = $this->CreateShippingLabel($toName, $toAddr, $toAddr2, $toCity, $toState, $toZip, $phone, $email, $shipment['weight'], $shipment['length'], $shipment['width'], $shipment['height'], $demo);
+                //Live LTL Pickup
+            }
+        } else {
+            //Regular Carrier Quote
+            if ($demo) {
+            } else {
+                //Demo Carrier Quote
             }
         }
 
-        return number_format(floatval($shipping_total), 2, '.', ',');
+        return $labels_output;
     }
 
     public function CreateShippingLabel($toName, $toAddr, $toAddr2, $toCity, $toState, $toZip, $phone, $email, $weight, $length, $width, $height, $demo = true): string

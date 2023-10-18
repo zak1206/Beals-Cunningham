@@ -347,8 +347,6 @@ class Checkout
         include('../tax/zip-tax-handler.php');
         $taxHandler = new ZipTaxHandler();
         $shipping_handler = new ShippingHandler();
-        $engine = new ShipEngineHandler();
-        $result = $engine->GetLTLCarrierCodes();
         //$result = $shipping_handler->CreateShippingLabel('Zak Rowton', '3968 rochelle ln', '', 'Heartland', 'TX', '76137', 12, 12, 12, "inch", 65, "pound", '817-899-8723', 'zak.rowton@gmail.com');
         include('config.php');
         $cartTotal = 0.0;

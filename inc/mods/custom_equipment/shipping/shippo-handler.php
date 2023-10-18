@@ -165,10 +165,6 @@ class ShippoHandler implements ShippingInterface
         return $total;
     }
 
-    public function GetZipcodeFromLatitudeLongitude($lat, $lon){
-        
-    }
-
     public function ValidateAddress($street, $street2, $city, $state, $zip)
     {
         return true;

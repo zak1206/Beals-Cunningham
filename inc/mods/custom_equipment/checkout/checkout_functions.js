@@ -187,9 +187,6 @@ function ContinueToShippingMethod() {
     Checkout_Step3();
 }
 
-function calculateDaysBetweenDates(startDate, endDate) {
-}
-
 function CheckFormIssues() {
     var firstName = $("#ship_firstName").val();
     var lastName = $("#ship_lastName").val();
