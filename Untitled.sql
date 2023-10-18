@@ -1,0 +1,1 @@
+SELECT * FROM stellar.custom_equipment;
