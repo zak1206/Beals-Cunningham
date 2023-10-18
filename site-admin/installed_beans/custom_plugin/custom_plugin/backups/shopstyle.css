@@ -1,0 +1,206 @@
+:root {
+    --ecommerce-primary-color: #005797;
+    --ecommerce-secondary-color: #343a40;
+    --ecommerce-star-color: #005797;
+    --ecommerce-background-color: #f2f2f2;
+
+}
+
+/*header styling*/
+h1.bcss_ecommerce{
+    font-size: 2rem;
+}
+h2.bcss_ecommerce{
+    font-size: 1.1rem;
+}
+h3.bcss_ecommerce{
+    font-size: 2rem;
+}
+h3.bcss_ecommerce.small{
+    font-size: 1.6rem;
+}
+h3.bcss_ecommerce_primary-background{
+    color: #fff;
+    background-color: var(--ecommerce-primary-color);
+}
+h4.bcss_ecommerce{
+    font-size: 1.6rem;
+}
+/*end header styling*/
+
+/*elements styling*/
+a.bcss_ecommerce{
+    text-decoration: none !important;
+    color: var(--ecommerce-primary-color)!important;
+}
+ul.bcss_ecommerce{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.fa-star,
+.fa-star-half{
+    color: var(--ecommerce-star-color);
+}
+.bcss_ecommerce_primary-color{
+    color: var(--ecommerce-primary-color);
+}
+.bcss_ecommerce_button-main{
+    background-color: var(--ecommerce-secondary-color);
+    color: #fff;
+    border-radius:0;
+    margin: 0 0 0 5px;
+    font-size: 17px;
+}
+.bcss_ecommerce_button{
+    background-color: var(--ecommerce-secondary-color);
+    color: #fff;
+    border-radius:0;
+    margin: 0;
+    font-size: 17px;
+}
+.bcss_ecommerce_details_background{
+    background-color: var(--ecommerce-background-color);
+}
+/*end elements styling*/
+
+/*styling for color choose*/
+.pill img{
+    height:50px;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 1s;
+    object-fit: cover;
+}
+.pill label{
+    overflow: hidden;
+    position: relative;
+}
+.imgbgchk:checked + label>.tick_container{
+    opacity: 1;
+}
+.imgbgchk:checked + label>img{
+    transform: scale(1.25);
+    opacity: 0.3;
+}
+.tick_container {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+    text-align: center;
+}
+.tick {
+    background-color: var(--ecommerce-primary-color);
+    color: white;
+    font-size: 12px;
+    padding: 3px 3px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+/*end styling for color choose*/
+
+/*promo price styling*/
+.bcss_ecommerce_promotion-price{
+    color: var(--ecommerce-secondary-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.bcss_ecommerce_promotion-difference{
+    padding: 0 3px;
+    background: red;
+    font-size: .8rem;
+    color: #fff;
+    font-weight: 700;
+}
+.bcss_ecommerce_promotion-old{
+    margin-left: 5px;
+    color: var(--ecommerce-secondary-color);
+    font-size: .8rem;
+    font-weight: 500;
+}
+/*end promo price styling*/
+
+/*other products slider*/
+.other_product_slide .slick-prev:before,
+.other_product_slide .slick-next:before {
+    font-size: 24pt;
+    color: var(--ecommerce-primary-color);
+}
+.other_product_slide .slick-prev {
+    left: -5vw;
+}
+.other_product_slide .slick-next {
+    right: -5vw;
+}
+.other_product_slide .slick-dots li button,
+.slick-dots li.slick-active button:before {
+    color: var(--ecommerce-primary-color);
+}
+.other_product_slide .slick-dots li button:before {
+    font-size: 50px;
+}
+.bcss_ecommerce_card{
+    margin-bottom: 20px;
+    border-radius: 0px;
+    border: transparent;
+    width: 278px;
+}
+.bcss_ecommerce_img{
+    object-fit: cover;
+    width: 100%;
+    height: 240px;
+}
+/*end other products slider*/
+
+/*product reviews*/
+.reviews article:nth-child(odd){
+    background-color: var(--ecommerce-background-color);
+}
+.bcss_ecommerce_light{
+    font-weight: 400;
+    display: inline;
+}
+.hidden:not(:nth-child(-n+3)){
+    height: 0;
+    visibility: collapse;
+}
+/*end product reviews*/
+
+/*rating form*/
+.form_rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.form_rating > input{ display:none;}
+
+.form_rating > label {
+    position: relative;
+    width: 1em;
+    font-size: 2rem;
+    color: #005797;
+    cursor: pointer;
+}
+.form_rating > label::before{
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+.form_rating > label:hover:before,
+.form_rating > label:hover ~ label:before {
+    opacity: 1 !important;
+}
+
+.form_rating > input:checked ~ label:before{
+    opacity:1;
+}
+
+.form_rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+/*end rating form*/

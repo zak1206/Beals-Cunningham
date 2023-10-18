@@ -1,0 +1,17 @@
+2023-06-27 13:54:35~[INFO]:~ajaxfile.php Executing Action: paytypes
+2023-06-27 13:54:35~[INFO]:~PayTypes() Started...
+2023-06-27 13:54:35~[INFO]:~PayTypes() PayType: elavon
+2023-06-27 13:54:35~[INFO]:~PaymentTypes() Selected API: 'Elavon'
+2023-06-27 13:54:35~[INFO]:~PayTypes() Completed Successfully!
+2023-06-27 13:54:36~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-06-27 13:54:37~[INFO]:~ajaxfile.php Executing Action: payment_gatways
+2023-06-27 13:54:37~[INFO]:~Payment_Gateways() Started...
+2023-06-27 13:54:37~[INFO]:~Payment_Gateways() Completed Successfully!
+2023-06-27 13:54:37~[INFO]:~ajaxfile.php Executing Action: paytypes
+2023-06-27 13:54:37~[INFO]:~PayTypes() Started...
+2023-06-27 13:54:37~[INFO]:~PayTypes() PayType: elavon
+2023-06-27 13:54:37~[INFO]:~PaymentTypes() Selected API: 'Elavon'
+2023-06-27 13:54:37~[INFO]:~PayTypes() Completed Successfully!
+2023-06-27 13:54:38~[INFO]:~ajaxfile.php Executing Action: getshipping
+2023-06-27 13:54:38~[INFO]:~GetShipping() Started...
+2023-06-27 13:54:38~[INFO]:~GetShipping() Completed Successfully!

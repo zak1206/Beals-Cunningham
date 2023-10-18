@@ -1,0 +1,25 @@
+
+
+.img-responsive {
+    width: 100%;
+}
+
+.slideNext {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    font-size:60px;
+    right: 20px;
+}
+
+.slidePrev {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    font-size:60px;
+    left: 20px;
+}
+
+
+
+

@@ -1,0 +1,111 @@
+@import "hamburgers.css";
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+.dropdown-menu > ul {
+    list-style: none;
+    padding: 10px;
+  }
+.navbar-logo {
+    width: 225px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.main-nav {
+    background-color: #181E22;
+    margin-right: 5% !important;
+    margin-left: 5% !important;
+    box-shadow: 1px 7px 9px #000;
+    margin-top: -10px;
+}
+.nav-link:hover {
+    transition: color 1.5s ease;
+    color: #FFDE00;
+}
+.fas:hover {
+    color: #FFDE00;
+}
+.fa-facebook-f:hover  {
+    color: #3b5998;
+}
+.fa-instagram:hover {
+    background: -webkit-linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+.social-container {
+    display: inline-block;
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: right;
+}
+.hamburger-box {
+    height: 0px;
+}
+.navigation {
+    z-index: 1;
+    position: relative;
+}
+.secondary-header {
+    margin-top: 7%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 64px;
+    text-align: center;
+}
+/* Mobile breaking point */
+@media only screen and (max-width: 990px) {
+    .main-nav {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .social-container {
+        text-align: left;
+        width: 100%;
+    }
+    .navbar-brand {
+        width: 70%;
+    }
+    .navbar-logo {
+        width: 100%;
+        text-align: center;
+    }
+    .main-nav {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .social-container {
+        text-align: left;
+        width: 100%;
+    }
+    .navbar-brand {
+        width: 70%;
+    }
+    .navbar-logo {
+        width: 100%;
+        text-align: center;
+    }
+}

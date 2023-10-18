@@ -1,0 +1,30 @@
+{
+  "shop_location": "11",
+  "cartItems": [
+    {
+      "uniqId": "7df2d6bdb21c2f20af7c0b9ba07b0666",
+      "id": "21",
+      "name": "SJ17929",
+      "eqtype": "custom",
+      "price": "87.75",
+      "url": "https://www.westcentraleq.com/products/Equipment-Parts/1-Series-Compact-Tractor-Parts/Toolbox/SJ17929",
+      "eqtabs": "custom_equipment",
+      "qty": "1"
+    },
+    {
+      "uniqId": "f8f05ae3e01cbd7eaa09c59c422b880d"
+      "id": "153",
+      "name": "Frontier-AF10F-Front-Blade",
+      "eqtype": "custom",
+      "price": "2486",
+      "url": "https://www.westcentraleq.com/products/1-Series-Tractor-Implements/Frontier-AF10F-Front-Blade",
+      "eqtabs": "custom_equipment",
+      "qty": "1"
+    }
+  ],
+  "discount_code": "",
+  "shipping_type": "Customer Pickup",
+  "shipping_token": "",
+  "pickup": "true",
+  "applied_tax": 154.43
+}

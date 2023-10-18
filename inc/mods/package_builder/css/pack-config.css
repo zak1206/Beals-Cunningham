@@ -1,0 +1,300 @@
+.active .bs-stepper-circle {
+    background-color: #097F0E;
+    color: white;
+}
+
+.bs-stepper .step-trigger.disabled, .bs-stepper .step-trigger:disabled {
+    opacity: 1;
+}
+
+.bs-stepper-circle {
+    color: black;
+    background-color: #FDDD44;
+}
+
+.package-title {
+    font-family: Arial, sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    color: #097F0E;
+}
+
+.base-equip-price {
+    float: right;
+    color: black;
+}
+
+.line-through {
+    color: red;
+    text-decoration: line-through;
+}
+
+.bs-stepper-content {
+    font-family: Arial, sans-serif;
+}
+
+#stepper1 {
+    font-family: Arial, sans-serif;
+}
+
+.deerecontent-wrapper {
+    font-family: Arial, sans-serif;
+    text-align: left;
+
+}
+
+.deerecontent-wrapper > .title {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.deerecontent-wrapper > .sub-title {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.deerecontent-wrapper > h4 {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.offers-header {
+    font-family: Arial, sans-serif;
+}
+
+.subcat {
+    margin-top: 50px;
+}
+
+.equipment {
+    margin-top: 50px;
+}
+
+#config {
+    border-radius: 0px;
+    background: #097F0E;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+#attachments {
+    border-radius: 0px;
+    background: #097F0E;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+.previous {
+    border-radius: 0px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+.builder-container {
+    cursor: pointer;
+}
+
+#subpack {
+    border-radius: 0px;
+    background: #097F0E;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+range-slider {
+    width: 100%;
+}
+
+.range-slider__range {
+    -webkit-appearance: none;
+    width: calc(100% - (73px));
+    height: 10px;
+    border-radius: 5px;
+    background: #097F0E;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+.range-slider__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+}
+.range-slider__range::-webkit-slider-thumb:hover {
+    background:#097F0E;
+}
+.range-slider__range:active::-webkit-slider-thumb {
+    background: #097F0E;
+}
+.range-slider__range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #097F0E;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+}
+.range-slider__range::-moz-range-thumb:hover {
+    background: #097F0E;
+}
+.range-slider__range:active::-moz-range-thumb {
+    background: #097F0E;
+}
+.range-slider__range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #097F0E;
+}
+
+.range-slider__value {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background: #097F0E;
+    padding: 5px 10px;
+    margin-left: 8px;
+}
+.range-slider__value:after {
+    position: absolute;
+    top: 8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #097F0E;
+    border-bottom: 7px solid transparent;
+    content: '';
+}
+
+::-moz-range-track {
+    background: #d7dcdf;
+    border: 0;
+}
+
+@media screen and (max-width: 540px) {
+    .bs-stepper-label {
+        font-size: .6rem;
+    }
+
+    .panel .panel-success .card {
+        border: solid 1px #ccc;
+    }
+    .panel-title {
+        font-family: Arial, san-serif;
+        padding-top: 10px;
+        background: green;
+        margin: 0;
+        color: white;
+    }
+
+    .offers-header {
+        display: none;
+    }
+
+    .offers-holder {
+        display: none;
+    }
+
+    .btn .btn-success .package-builder-btn {
+        margin: 20px 14px;
+    }
+
+    #stepper1trigger1 {
+        font-size: .6rem;
+    }
+
+    .package-title {
+        font-size: 1rem;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .range-slider__range {
+        width: calc(100% - (-7px));
+    }
+}
+
+
+.image-holder.col-sm-4.col-md-6.four-three {
+    display: none;
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border-radius: .25rem;
+}
+
+.offer-btn {
+    order-radius: 0px;
+    background: #097F0E;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    /* margin-top: 20px; */
+    float: right;
+    border-radius: 1px;
+}
+
+.offers-holder a {
+    display: none;
+}
+
+h1.offers-header {
+    display: none;
+}
+
+#sidebar-cards-archive ul li {
+    list-style: none;
+}
+/*** custom checkboxes ***/
+
+.input-group-text{
+    background: none;
+    border:none;
+    padding: 0;
+}
+
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+input[type=checkbox] {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+/* to hide the checkbox itself */
+input[type=checkbox]:after {
+    background:none;
+    height: 100%;
+    width: 100%;
+    font-family: "Font Awesome\ 5 Free";
+    display: inline-block;
+    content:"\2b";
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #a6a6a6;
+}
+/* space between checkbox and label */
+input[type=checkbox]:checked:after {
+    font-family: "Font Awesome\ 5 Free";
+    display: inline-block;
+    content:"\f00c";
+    letter-spacing: 5px;
+    color: green;
+}
+/* allow space for check mark */

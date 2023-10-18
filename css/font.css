@@ -1,0 +1,48 @@
+@import url("https://use.typekit.net/hpn8myu.css");
+
+.test {
+    font-family: proxima-nova-extra-condensed,sans-serif;
+    /*font-family: proxima-nova-extra-condensed, sans-serif;*/
+    /*font-family: proxima-nova-condensed, sans-serif;*/
+    font-weight: 700;
+    /*font-weight: 400*/
+    font-style: normal;
+    /*font-style: italic;*/
+    /*font-style: bold;*/
+}
+
+.proxima-nova {
+    font-family: proxima-nova, sans-serif;
+}
+
+.proxima-nova-condensed {
+    font-family: proxima-nova-condensed, sans-serif;
+}
+
+.proxima-nova-extra-condensed {
+    font-family: proxima-nova-extra-condensed,sans-serif;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.heavy {
+    font-weight: 700;
+}
+
+.shadow {
+    text-shadow: 0px 3px 6px rgba(0,0,0, 0.25);
+}
+
+.text-nav {
+    color: white;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .text-nav {
+        font-size: 16px;
+    }
+}

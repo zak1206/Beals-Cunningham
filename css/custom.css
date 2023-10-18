@@ -1,0 +1,170 @@
+.green-nav-container {
+  width: 100%;
+  height: 32px;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("../../../../img/why.png");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.secondary-header-h1 {
+  text-align: center;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 900;
+}
+@media screen and (max-width: 450px){
+  .secondary-header-h1 {
+    font-size: 45px;
+  }
+}
+.italic{
+    font-style: italic;
+}
+.b-900{
+    font-weight: 900;
+}
+.icon-AKRS-Icons-Tiles-computer-screen::before{
+    color: #367c2b !important;
+}
+.stellar-service {
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stellar-service-header{
+  background-image: url("../../../../img/stellarserviceheader.png"),linear-gradient(rgb(54 54 54),rgb(54 54 54));
+  background-blend-mode: overlay;
+}
+.stellar-careers-header{
+  background-image: url("../../../../img/stellarcareersheader.png"),linear-gradient(rgb(54 54 54),rgb(54 54 54));
+  background-blend-mode: overlay;
+}
+.stellar-careers-opp-header{
+  background-image: url("../../../../img/stellarcareersoppheader.png"),linear-gradient(rgb(54 54 54),rgb(54 54 54));
+  background-blend-mode: overlay;
+}
+.stellar-parts-header{
+  background-image: url("../../../../img/stellarpartsheader.png"),linear-gradient(rgb(54 54 54),rgb(54 54 54));
+  background-blend-mode: overlay;
+}
+.stellar-locations-header{
+  background-image: url("../../../../img/stellarlocations.png"),linear-gradient(rgb(54 54 54),rgb(54 54 54));
+  background-blend-mode: overlay;
+}
+.stellar-compact-const-header{
+  background-image: url("../../../../img/stellarcompactconstheader.png");
+  background-blend-mode: overlay;
+}
+.stellar-forestry-header{
+  background-image: url("../../../../img/stellarforestryheader.png");
+  background-blend-mode: overlay;
+}
+.stellar-stihl-header{
+  background-image: url("../../../../img/stellarstihlheader.png"),linear-gradient(rgb(54 54 54),rgb(54 54 54));
+  background-blend-mode: overlay;
+}
+.stellar-honda-header{
+  background-image: url("../../../../img/stellarhondaheader.png"),linear-gradient(rgb(54 54 54),rgb(54 54 54));
+  background-blend-mode: overlay;
+}
+.stellar-byo-header {
+  background-image: url("../../../../img/stellarusedequip.png");
+  background-blend-mode: overlay;
+}
+.stellar-events-header {
+  background-image: url("../../../../img/");
+  background-blend-mode: overlay;
+}
+.stellar-ageq-header {
+  background-image: url("../../../../img/stellaragri.png");
+  background-blend-mode: overlay;
+}
+.stellar-lawn-garden-header {
+  background-image: url("../../../../img/stellarlawngarden.png");
+  background-blend-mode: overlay;
+}
+
+.stellar-used-eq {
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../../img/field.webp");
+  margin-top: -100px;
+}
+.stellar-contact {
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../../img/contact.webp");
+  margin-top: -100px;
+}
+
+.used-container {
+  background-color: white;
+  height: 150px;
+}
+.used-price {
+  background-color: #367C2B;
+  position: absolute;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+  right: -5%;
+  bottom: 34%;
+}
+.used-title {
+  font-size: 26px;
+}
+.used-title:hover {
+  color: #367C2B;
+}
+.used-detail {
+  color: grey;
+}
+.used-detail:hover {
+  color: black;
+}
+.used-container {
+  padding-left: 10px;
+  border-radius: 0px 0px 20px 0px;
+}
+.used-image {
+  border-radius: 20px 0px 0px 0px;
+}
+
+.new-link:hover {
+  color: #FFDEOO;
+}
+
+.footer-link:hover {
+  color: white;
+}
+.pic-1 {
+  border-radius: 20px 0px 20px 0px;
+  padding: 0px !important;
+}
+.home-margin {
+  margin-top: -100px;
+}
+@media only screen and (max-width: 450px) {
+  .home-margin {
+    margin-top: 0px;
+  }
+
+}
+

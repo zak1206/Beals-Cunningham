@@ -1,0 +1,196 @@
+.sidenav {
+    width: 0;
+    /* display: none; */
+    background-color: #28a745;
+    float: left;
+    z-index: 9000;
+}
+
+#openSideNav {
+    position: relative;
+    top: 130px;
+    z-index: 8000;
+}
+
+#closeNavHideImg {
+    display: block;
+    position: relative;
+    height: 125px;
+    left: 350px;
+    bottom: 720px;
+    z-index: 10;
+}
+.site-search-closebtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    padding: 20px;
+}
+
+#closeSideNav {
+    display: none;
+    height: 125px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 0px;
+    transition: 0.5s;
+}
+
+.search-equip {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-equip ul {
+    background-color: #fff;
+    color: #194e21;
+    border: 1px solid #fff;
+    border-radius: 25px;
+}
+.search-equip ul,
+.search-equip li {
+    display: inline-block;
+}
+
+.sidenav a {
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    border: 1px solid #fff;
+    border-radius: 25px;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.sidenav .closebtn {
+    font-size: 20px;
+    float: right;
+    color: #fff;
+    border: none;
+}
+.sidenav .closebtn:hover {
+    background-color: #194e21;
+}
+
+.search-equip > ul > li > .active {
+    color: #fff;
+    background-color: #28a745;
+}
+
+#close-sideNav {
+    width: 0;
+    left: 450px;
+    transition: 0.3s;
+}
+/* EQ Search Start ===================*/
+.eq-search-span {
+    position: fixed;
+
+    z-index: 8000;
+    writing-mode: vertical-rl;
+    cursor: pointer;
+    left: 0;
+}
+.open-side-nav-img {
+    height: 155px;
+    width: auto;
+    object-fit: contain;
+    margin-top: 180px;
+}
+.close-sidenav-span {
+    position: fixed;
+    top: 400px;
+    z-index: 8000;
+    writing-mode: vertical-rl;
+    left: 450px;
+    display: none;
+}
+.close-sidenav-img {
+    height: 155px;
+}
+/* EQ Search End ===================*/
+#main {
+    transition: margin-left 0.5s;
+}
+.wrapper {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    .carousel-caption {
+        display: none;
+    }
+
+    .blinking {
+        position: absolute;
+        top: -800px;
+        left: 28%;
+    }
+}
+@media only screen and (min-width: 1084px) {
+    .eq-search-span {
+        top: 400px;
+    }
+}
+
+@media only screen and (max-width: 1083px) and (min-width: 769px) {
+    .eq-search-span {
+        top: 350px;
+    }
+    .close-sidenav-span {
+        top: 350px;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 732px) {
+    .eq-search-span {
+        top: 250px;
+    }
+    .close-sidenav-span {
+        top: 250px;
+    }
+}
+@media only screen and (max-width: 731px) and (min-width: 426px) {
+    .eq-search-span {
+        top: 200px;
+    }
+    .close-sidenav-span {
+        top: 200px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .eq-search-span {
+        top: 311px;
+    }
+    .close-sidenav-span {
+        top: 311px;
+    }
+}
+
+/* Homepage search bar styles start =====================*/
+@media only screen and (max-width: 574px) {
+    .side-search-desktop {
+        display: none;
+    }
+}

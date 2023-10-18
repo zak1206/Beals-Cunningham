@@ -1,0 +1,12 @@
+FOOTER DEPENDENCIES FOR OTHER THINGS
+
+These items need to be loaded by modals not through the core.
+
+<script src="js/jquery.jcarousel.js"></script>
+<script src="js/jcarousel.responsive.js"></script>
+<script src="js/list.min.js"></script>
+<script src="js/jquery.paginate.js"></script>
+<script src="js/bootstrap-slider.js"></script>
+<script src="https://js.stripe.com/v2/"></script>
+<script src="js/select.js"></script>
+<script src="js/sessions.js"></script>

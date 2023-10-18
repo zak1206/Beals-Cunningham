@@ -1,0 +1,691 @@
+.wrapper-write-a-review {
+    width: 100%;
+    float: left;
+}
+
+.product-summary-comp .content .rate-input {
+    margin: -8px 0;
+}
+
+.rate-input a {
+    text-decoration: none;
+}
+
+.rate-input .input, .rate-input a, .rate-input span {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.rate-input .input {
+    color: #367c2b;
+    margin-top: -8px;
+    padding: 0;
+    margin-right: 8px;
+}
+
+.jq-ry-container>.jq-ry-group-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group.jq-ry-normal-group {
+    width: 100%;
+    float:left;
+}
+
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group {
+    position: relative;
+    line-height: 0;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group.jq-ry-rated-group {
+    width: 0;
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
+    display: inline-block;
+}
+
+.number-reviews {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.new-write-review-button-link {
+    color: #367c2b;
+    font-weight: bold;
+    text-decoration: none;
+
+
+}
+
+.equipprice {
+    font-size:2.6rem;
+    color: black;
+}
+
+.usd {
+    font-size:1.6rem;
+}
+
+.startingat {
+    color: #666;
+    font-size: 12px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1;
+}
+
+
+a.nav-link.active {
+    color: #377C2E;
+    font-weight: bold;
+}
+
+/* Style the navbar */
+#new-navbar {
+    overflow: hidden;
+    background: #3E7930;
+    width: 100%;
+
+}
+
+#new-navbar > .nav-item {
+    border-right: 3px solid #fff;
+}
+
+#new-navbar > .nav-item:hover {
+    background: black;
+}
+
+#new-navbar > .nav-item a {
+    color: white;
+}
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.submodel {
+    font-size: 2rem;
+}
+
+.panel-default>.panel-heading {
+    background: transparent;
+}
+
+.panel {
+    border: none;
+}
+
+.collapse.in {
+    background-color: #d5d5d5;
+    color: #666;
+}
+
+.panel-group .panel-heading {
+    border-bottom: 1px solid #ccc;
+}
+
+.review-cards-component .review-card-component .review-card .review-card-summary .rating-item {
+    margin: 10px 0 0 0;
+}
+
+.g-rating-bar label {
+    float: left;
+}
+
+.g-rating-bar label, .g-rating-bar span {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.g-rating-bar .value {
+    float: right;
+}
+
+.g-rating-bar label, .g-rating-bar span {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+ .bar {
+    overflow: hidden;
+    clear: both;
+    background: #e5e6e6;
+    height: 20px;
+    text-align: right;
+    position: relative;
+}
+
+.bar .bg {
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    height: 100%;
+    width: 0%;
+    transition: .5s ease-in-out;
+    background: #666;
+}
+
+ .bar .segments {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.g-rating-bar .bar .segments .segment:first-child {
+    border: none;
+}
+
+.g-rating-bar .bar .segments .segment {
+    height: 100%;
+    float: left;
+    border-left: 1px solid #fff;
+}
+
+.visuallyhidden {
+    display: none;
+}
+
+.review-nav {
+    background: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul.filterlist {
+    height: 28px;
+    margin-top: 20px;
+    display: none;
+}
+
+ul.filterlist li {
+    display: inline-block;
+
+}
+
+ul.filterlist li a {
+    color: white;
+    background: #464646;
+    padding: 8px 24px;
+}
+
+ul.filterlist li a:hover {
+    text-decoration: none;
+}
+
+
+
+.reviews-filter-bar-component .reviews-filter-bar .filters .filter, .reviews-filter-bar-component .reviews-filter-bar .filters .x-filter {
+    display: block;
+    background: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    transition: .5s;
+    left: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .reviews-filter-bar-component .reviews-filter-bar .filters .filter.active, .reviews-filter-bar-component .reviews-filter-bar .filters .x-filter.active {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .reviews-filter-bar-component .reviews-filter-bar .filters .filter, .reviews-filter-bar-component .reviews-filter-bar .filters .x-filter {
+        display: none;
+        position: absolute;
+        left: 0;
+        z-index: 1000;
+        top: 56px;
+        padding: 16px 16px 24px 16px;
+        box-shadow: 0 1px 1px 1px #c2c2c2;
+        min-width: 150px;
+    }
+    }
+
+.reviews-filter-bar-component .reviews-filter-bar .filters .filter, .reviews-filter-bar-component .reviews-filter-bar .filters .x-filter {
+    display: block;
+    background: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    transition: .5s;
+    left: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .reviews-filter-bar-component .reviews-filter-bar .filters .filter .content-fill, .reviews-filter-bar-component .reviews-filter-bar .filters .x-filter .content-fill {
+        display: block;
+        background: #333;
+        width: 100%;
+        height: 8px;
+        position: absolute;
+        left: 0;
+        top: -8px;
+    }
+}
+
+.reviews-filter-bar-component .reviews-filter-bar .filters .filter.active .content, .reviews-filter-bar-component .reviews-filter-bar .filters .x-filter.active .content {
+    display: block;
+}
+
+.reviews-filter-bar-component .reviews-filter-bar .filters .filter .content, .reviews-filter-bar-component .reviews-filter-bar .filters .x-filter .content {
+    display: none;
+    padding-bottom: 24px;
+}
+
+.video-js, .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%!important;
+    height: 0;
+    width: 100%;
+    display: block;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.block-content.primary .image-cont {
+    padding: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .block-content.primary .image-cont {
+        width: 100%;
+        padding-right: 450px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .block-content.primary .content {
+        padding-top: 72px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .block-content.primary .content {
+        width: 430px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.vid-list-header {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.vid-thumb {
+    width: 200px;
+    display: inline-block;
+}
+
+.vid-container {
+    position: relative;
+    padding-bottom: 54%;
+    padding-top: 30px;
+    height: 0;
+}
+
+.vid-container iframe,
+.vid-container object,
+.vid-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.vid-list-container {
+    overflow: hidden;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.vid-list {
+    width: 100%;
+    position: relative;
+    top:0;
+    left: 0;
+}
+
+.vid-item {
+    display: block;
+    width: 20%;
+
+    float: left;
+    margin: 0;
+    padding: 10px;
+}
+
+.thumb {
+    overflow:hidden;
+    height: 84px;
+}
+
+.thumb img {
+    width: 100%;
+    position: relative;
+    top: -13px;
+}
+
+.vid-item .desc {
+    color: #21A1D2;
+    font-size: 15px;
+    margin-top:5px;
+}
+
+.arrows {
+    position:relative;
+    width: 100%;
+}
+
+.arrow-left {
+    color: #fff;
+    position: absolute;
+    background: #777;
+    padding: 15px;
+    left: -25px;
+    top: -130px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.arrow-right {
+    color: #fff;
+    position: absolute;
+    background: #777;
+    padding: 15px;
+    right: -25px;
+    top: -130px;
+    z-index:100;
+    cursor: pointer;
+}
+
+@media (max-width: 624px) {
+    .arrows {
+        position:relative;
+        margin: 0 auto;
+        width:96px;
+    }
+    .arrow-left {
+        left: 0;
+        top: -20px;
+    }
+
+    .arrow-right {
+        right: 0;
+        top: -20px;
+    }
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+a.page.page-prev.deactive {
+    color: #377C2E;
+}
+
+.paginate-pagination ul > li > a.page.active {
+    background: #377C2E;
+    color: white;
+    opacity: 1;
+}
+
+.paginate-pagination ul > li > a.page {
+    color: #377C2E;
+    opacity: 1;
+}
+
+#comp-options {
+    border: 2px #fdda01 solid;
+    background: #fdda01;
+    margin-bottom: 20px;
+}
+
+.panel-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a.remove-col {
+    font-weight: bold;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.x {
+    color:#377C2E;
+}
+
+section#accatts {
+    background: #eff0f0;
+    padding: 50px 20px;
+}
+
+.acc-sec-title {
+    padding-bottom: 20px;
+    border-bottom: solid 1px #ccc;
+    font-weight: bold;
+}
+
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group.jq-ry-rated-group {
+    width: 0;
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+    .rate-input.text-md-left .align {
+        min-width: 75px;
+        text-align: center;
+    }
+}
+
+.rate-input span.large-value {
+    font-size: 60px;
+    color: #367c2b;
+}
+
+.rate-input span {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-right: 16px;
+}
+
+#reviewdata > .jq-ry-container {
+    position: relative;
+    padding: 0 5px;
+    line-height: 0;
+    display: block;
+    cursor: pointer;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+@media print, (min-width: 768px) {
+    .rate-input .snapshot {
+        left: 250px;
+    }
+}
+
+.rate-input .snapshot {
+    width: 250px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -20px;
+    left: 100px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,.37);
+    z-index: 100;
+}
+
+.rate-input .snapshot h4 {
+    margin: 10px 5px 15px 5px;
+}
+
+.rate-input .snapshot .g-rating-bar {
+    margin: 7px 5px 7px 5px;
+}
+
+
+.g-rating-bar {
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+#review-overall {
+    padding: 30px 20px;
+
+}
+
+.rate-input {
+    margin: -8px 0;
+}
+
+.rate-input.new-rate-input {
+    float: left;
+    width: 48%;
+}
+
+li.nav-item.active a.nav-link {
+    color: #377C2E;
+}
+
+.seo-text {
+    background: #a2c36596;
+    padding: 20px 10px;
+    color: black;
+    border-radius: 4px;
+}
+
+.ctas {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    #newCarousel > .carousel-inner .active,
+    #newCarousel > .carousel-inner .active + .carousel-item,
+    #newCarousel > .carousel-inner .active + .carousel-item + .carousel-item,
+    #newCarousel >.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #newCarousel > .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    #newCarousel > .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    #newCarousel > .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    #newCarousel > .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+
+    #newCarousel > .carousel-inner .carousel-item-next,
+    #newCarousel > .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    #newCarousel > .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+
+    }
+
+    /* left or forward direction */
+    #newCarousel > .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    #newCarousel >  .carousel-item-next.carousel-item-left + .carousel-item,
+    #newCarousel > .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    #newCarousel > .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    #newCarousel > .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    #newCarousel > .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    #newCarousel > .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    #newCarousel > .carousel-item-prev.carousel-item-right + .carousel-item,
+    #newCarousel > .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    #newCarousel > .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    #newCarousel > .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    #new-navbar > .nav-item {
+        width: 100%;
+    }
+}
+
+

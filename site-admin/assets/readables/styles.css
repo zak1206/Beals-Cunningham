@@ -1,0 +1,110 @@
+html, body {
+    overflow-x: hidden;
+}
+
+.slick-arrow{
+ margin:20px 
+}
+
+.sidesetnav{
+ list-style:none;
+ padding:0px
+}
+
+.sidesetnav li a{
+ display:block; 
+ padding:10px;
+ background:#e0dede;
+ color:#333;
+ margin:2px
+}
+
+.clearfix{
+ width:100% 
+}
+
+.form-cont{
+ padding:5px;
+}
+
+.error{
+ color:red; 
+}
+
+/*Deere Styles*/
+#accordion{
+ width:100% 
+}
+
+.deere_overview ul{
+  margin: 0px 20px;
+  padding: 0;
+}
+
+.model_header{
+  font-weight: bold
+}
+
+.category_type{
+  
+}
+
+.price_area{
+ margin: 0 
+}
+
+.thedeereprice{
+  
+}
+
+.fetheads{
+ width:100%;
+ display:block;
+ padding:10px;
+ font-weight:bold;
+ cursor:pointer;
+ border-bottom:solid thin #e0e0e0;
+}
+
+.fetdets{
+  padding:10px;
+}
+
+.fetdets img{
+ display:block 
+}
+
+.seccion-images div {
+    display: inline-table;
+    vertical-align: top;
+    margin: 8px 16px 8px 0;
+}
+
+.deere_section .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #50B24D;
+  	border-radius: 0;
+  font-weight:bold;
+}
+
+.deere_section li a{
+ color:#333;
+  font-weight:bold
+}
+
+#compare_select{
+     border-radius: 0;
+    background: #FCDA01;
+    color: #000;
+    font-weight: normal;
+    border: solid thin #FCDA01;
+    outline: none;
+}
+
+#stickThis.stick {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+}

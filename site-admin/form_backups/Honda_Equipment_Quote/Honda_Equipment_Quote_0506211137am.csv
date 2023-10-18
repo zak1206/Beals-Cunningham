@@ -1,0 +1,4 @@
+"id","equipment_link","firstName","LastName","Phone","Email","recpt_loc","Message","receive_date","active","status",
+"1","","Test","Test","Test","Test@T.com","sushp@bealscunningham.com","Test","1620312508","true","new",
+"2","http://legacy.bcssdevelop.com/Honda-Equipment/Generators/EB10000","Test","Test","Test","Test","sushp@bealscunningham.com","Testing form","1620315909","true","new",
+"3","http://legacy.bcssdevelop.com/Honda-Equipment/Generators/EB10000","Test","Patil","Test","Test@T.com","sushp@bealscunningham.com","Testing form","1620316448","true","new",

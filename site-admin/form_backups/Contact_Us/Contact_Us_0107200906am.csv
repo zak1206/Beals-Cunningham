@@ -1,0 +1,4 @@
+"id","first_name","last_name","email_address","form_files","message","receive_date","active","status",
+"1","Jason","Cotton","jasonc@bealscunningham.com","<a href="../img/myfiles/giphy.gif" target="_blank">giphy.gif</a>","This is my message.","1577995593","true","read",
+"2","Doe","Cotton","jasonc@bealscunningham.com","<a href="../img/myfiles/Screen Shot 2020-01-02 at 4.02.24 PM.png" target="_blank">Screen Shot 2020-01-02 at 4.02.24 PM.png</a>","asdasdasdasdasdasd","1578346708","true","new",
+"3","Doe","Cotton","jasonc@bealscunningham.com","<a href="../img/myfiles/Screen Shot 2020-01-02 at 3.46.05 PM.png" target="_blank">Screen Shot 2020-01-02 at 3.46.05 PM.png</a>","asdasdasdasdasd","1578347018","true","new",

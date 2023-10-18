@@ -1,0 +1,48 @@
+.btn-green {
+    font-style: italic;
+    font-family: proxima-nova, sans-serif;
+    color: white;
+    background-color: #367C2B;
+    text-shadow: 0px 3px 6px rgba(0,0,0, 0.5);
+    border-radius: 0;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0, 0.35));
+}
+
+.btn-green:hover {
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0, 0.75));
+}
+
+.btn-success {
+    font-style: italic;
+    font-family: proxima-nova, sans-serif;
+    color: white;
+    background-color: #367C2B;
+    text-shadow: 0px 3px 6px rgba(0,0,0, 0.5);
+    border-radius: 0;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0, 0.35));
+}
+
+/*.btn-warning {
+    font-style: italic;
+    font-family: proxima-nova, sans-serif;
+    color: black;
+    background-color: #FFDE00;
+    text-shadow: 0px 3px 6px rgba(0,0,0, 0.5);
+    border-radius: 0;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0, 0.35));
+}*/
+.btn-success:hover {
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0, 0.75));
+}
+/*.btn-warning:hover {
+    filter: drop-shadow(0px 3px 6px rgba(0,0,0, 0.75));
+}*/

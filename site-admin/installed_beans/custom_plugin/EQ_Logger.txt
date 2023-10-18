@@ -1,0 +1,1096 @@
+2023-06-27 13:54:38~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-06-27 13:54:38~[INFO]:~GetProducts() Started...
+2023-06-27 13:54:38~[INFO]:~GetProducts() Completed Successfully!
+2023-06-27 13:54:39~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-06-27 13:54:54~[INFO]:~ajaxfile.php Executing Action: orders
+2023-06-27 13:54:54~[INFO]:~Pulling EQ Commerce Orders...
+2023-06-27 13:54:54~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-06-27 13:54:54~[INFO]:~Orders Completed Successfully!
+2023-06-27 13:54:56~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-06-27 13:54:57~[INFO]:~ajaxfile.php Executing Action: taxsettings
+2023-06-27 13:54:57~[INFO]:~TaxSettings() Started...
+2023-06-27 13:54:57~[INFO]:~TaxSettings() Completed Successfully!
+2023-06-27 13:54:58~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-06-27 13:55:01~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-06-27 13:55:01~[INFO]:~GetCategories Has Started...
+2023-06-27 13:55:01~[INFO]:~GetCategories() Completed Successfully!
+2023-06-27 13:55:02~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-06-27 13:55:23~[INFO]:~ajaxfile.php Executing Action: orders
+2023-06-27 13:55:23~[INFO]:~Pulling EQ Commerce Orders...
+2023-06-27 13:55:23~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-06-27 13:55:23~[INFO]:~Orders Completed Successfully!
+2023-06-27 13:55:35~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-06-27 13:58:04~[INFO]:~ajaxfile.php Executing Action: orders
+2023-06-27 13:58:04~[INFO]:~Pulling EQ Commerce Orders...
+2023-06-27 13:58:04~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-06-27 13:58:04~[INFO]:~Orders Completed Successfully!
+2023-06-27 13:58:07~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-06-27 13:58:07~[INFO]:~GetCategories Has Started...
+2023-06-27 13:58:07~[INFO]:~GetCategories() Completed Successfully!
+2023-06-27 13:58:56~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-06-27 13:58:56~[INFO]:~Editing Custom Category...
+2023-06-27 13:58:56~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-06-27 13:58:56~[INFO]:~'Edit Category' Form Created Successfully!
+2023-06-27 13:59:04~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-06-27 13:59:04~[INFO]:~GetProducts() Started...
+2023-06-27 13:59:04~[INFO]:~GetProducts() Completed Successfully!
+2023-06-27 13:59:05~[INFO]:~ajaxfile.php Executing Action: editproduct
+2023-06-27 13:59:05~[INFO]:~EditProduct() Started...
+2023-06-27 13:59:05~[INFO]:~EditProduct() ID Selected: 1508
+2023-06-27 13:59:05~[INFO]:~EditProduct() Completed Successfully!
+2023-06-27 13:59:26~[INFO]:~ajaxfile.php Executing Action: orders
+2023-06-27 13:59:26~[INFO]:~Pulling EQ Commerce Orders...
+2023-06-27 13:59:26~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-06-27 13:59:26~[INFO]:~Orders Completed Successfully!
+2023-06-27 14:07:21~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-06-27 14:08:42~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-06-27 14:08:42~[INFO]:~GetProducts() Started...
+2023-06-27 14:08:42~[INFO]:~GetProducts() Completed Successfully!
+2023-06-27 14:10:24~[INFO]:~ajaxfile.php Executing Action: taxsettings
+2023-06-27 14:10:24~[INFO]:~TaxSettings() Started...
+2023-06-27 14:10:24~[INFO]:~TaxSettings() Completed Successfully!
+2023-06-27 14:10:32~[INFO]:~ajaxfile.php Executing Action: orders
+2023-06-27 14:10:32~[INFO]:~Pulling EQ Commerce Orders...
+2023-06-27 14:10:32~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-06-27 14:10:32~[INFO]:~Orders Completed Successfully!
+2023-06-27 14:10:40~[INFO]:~ajaxfile.php Executing Action: taxsettings
+2023-06-27 14:10:40~[INFO]:~TaxSettings() Started...
+2023-06-27 14:10:40~[INFO]:~TaxSettings() Completed Successfully!
+2023-06-27 14:10:43~[INFO]:~ajaxfile.php Executing Action: orders
+2023-06-27 14:10:43~[INFO]:~Pulling EQ Commerce Orders...
+2023-06-27 14:10:43~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-06-27 14:10:43~[INFO]:~Orders Completed Successfully!
+2023-06-27 14:10:45~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-06-27 14:10:45~[INFO]:~Coupon_Settings() Started...
+2023-06-27 14:10:45~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-06-27 14:10:48~[INFO]:~ajaxfile.php Executing Action: edit_coupon
+2023-06-27 14:10:48~[INFO]:~Edit_Coupon() Started...
+2023-06-27 14:10:48~[INFO]:~Edit_Coupon() Coupon ID: 2
+2023-06-27 14:10:48~[INFO]:~Edit_Coupon() Completed Successfully!
+2023-06-27 14:10:55~[INFO]:~ajaxfile.php Executing Action: createcoupon_fin
+2023-06-27 14:10:55~[INFO]:~CreateCoupon_Fin() Started...
+2023-06-27 14:10:55~[INFO]:~CreateCoupon_Fin() Completed Successfully!
+2023-06-27 14:10:58~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-06-27 14:10:58~[INFO]:~Coupon_Settings() Started...
+2023-06-27 14:10:58~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-06-27 14:10:59~[INFO]:~ajaxfile.php Executing Action: edit_coupon
+2023-06-27 14:10:59~[INFO]:~Edit_Coupon() Started...
+2023-06-27 14:10:59~[INFO]:~Edit_Coupon() Coupon ID: 2
+2023-06-27 14:10:59~[INFO]:~Edit_Coupon() Completed Successfully!
+2023-06-27 14:13:06~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-06-27 14:13:06~[INFO]:~Coupon_Settings() Started...
+2023-06-27 14:13:06~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-06-27 14:13:08~[INFO]:~ajaxfile.php Executing Action: edit_coupon
+2023-06-27 14:13:08~[INFO]:~Edit_Coupon() Started...
+2023-06-27 14:13:08~[INFO]:~Edit_Coupon() Coupon ID: 2
+2023-06-27 14:13:08~[INFO]:~Edit_Coupon() Completed Successfully!
+2023-06-27 14:13:22~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-06-27 14:13:22~[INFO]:~Coupon_Settings() Started...
+2023-06-27 14:13:22~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-06-27 14:14:47~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-06-27 14:14:47~[INFO]:~GetCategories Has Started...
+2023-06-27 14:14:47~[INFO]:~GetCategories() Completed Successfully!
+2023-06-27 14:14:49~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-06-27 14:14:49~[INFO]:~Editing Custom Category...
+2023-06-27 14:14:49~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-06-27 14:14:49~[INFO]:~'Edit Category' Form Created Successfully!
+2023-06-27 14:14:52~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-06-27 14:14:52~[INFO]:~Coupon_Settings() Started...
+2023-06-27 14:14:52~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-06-27 14:14:53~[INFO]:~ajaxfile.php Executing Action: orders
+2023-06-27 14:14:53~[INFO]:~Pulling EQ Commerce Orders...
+2023-06-27 14:14:53~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-06-27 14:14:53~[INFO]:~Orders Completed Successfully!
+2023-06-27 14:14:54~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-06-27 14:14:54~[INFO]:~Coupon_Settings() Started...
+2023-06-27 14:14:54~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-06-27 14:14:55~[INFO]:~ajaxfile.php Executing Action: edit_coupon
+2023-06-27 14:14:55~[INFO]:~Edit_Coupon() Started...
+2023-06-27 14:14:55~[INFO]:~Edit_Coupon() Coupon ID: 2
+2023-06-27 14:14:55~[INFO]:~Edit_Coupon() Completed Successfully!
+2023-06-27 14:14:58~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-06-27 14:14:58~[INFO]:~Coupon_Settings() Started...
+2023-06-27 14:14:58~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-06-27 14:15:03~[INFO]:~ajaxfile.php Executing Action: orders
+2023-06-27 14:15:03~[INFO]:~Pulling EQ Commerce Orders...
+2023-06-27 14:15:03~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-06-27 14:15:03~[INFO]:~Orders Completed Successfully!
+2023-06-27 14:15:05~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-06-27 14:15:05~[INFO]:~Coupon_Settings() Started...
+2023-06-27 14:15:05~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-06-27 14:15:06~[INFO]:~ajaxfile.php Executing Action: edit_coupon
+2023-06-27 14:15:06~[INFO]:~Edit_Coupon() Started...
+2023-06-27 14:15:06~[INFO]:~Edit_Coupon() Coupon ID: 2
+2023-06-27 14:15:06~[INFO]:~Edit_Coupon() Completed Successfully!
+2023-06-27 14:16:40~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-06-27 14:16:40~[INFO]:~Coupon_Settings() Started...
+2023-06-27 14:16:40~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-06-27 14:16:41~[INFO]:~ajaxfile.php Executing Action: edit_coupon
+2023-06-27 14:16:41~[INFO]:~Edit_Coupon() Started...
+2023-06-27 14:16:41~[INFO]:~Edit_Coupon() Coupon ID: 2
+2023-06-27 14:16:41~[INFO]:~Edit_Coupon() Completed Successfully!
+2023-06-27 14:16:49~[INFO]:~ajaxfile.php Executing Action: createcoupon_fin
+2023-06-27 14:16:49~[INFO]:~CreateCoupon_Fin() Started...
+2023-06-27 14:16:49~[INFO]:~CreateCoupon_Fin() Completed Successfully!
+2023-06-27 14:16:51~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-06-27 14:16:51~[INFO]:~Coupon_Settings() Started...
+2023-06-27 14:16:51~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-06-27 14:16:53~[INFO]:~ajaxfile.php Executing Action: edit_coupon
+2023-06-27 14:16:53~[INFO]:~Edit_Coupon() Started...
+2023-06-27 14:16:53~[INFO]:~Edit_Coupon() Coupon ID: 2
+2023-06-27 14:16:53~[INFO]:~Edit_Coupon() Completed Successfully!
+2023-06-27 14:17:38~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-06-27 14:17:40~[INFO]:~ajaxfile.php Executing Action: orders
+2023-06-27 14:17:40~[INFO]:~Pulling EQ Commerce Orders...
+2023-06-27 14:17:40~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-06-27 14:17:40~[INFO]:~Orders Completed Successfully!
+2023-06-27 16:11:37~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-06-27 16:11:37~[INFO]:~GetCategories Has Started...
+2023-06-27 16:11:37~[INFO]:~GetCategories() Completed Successfully!
+2023-06-27 16:11:52~[INFO]:~ajaxfile.php Executing Action: orders
+2023-06-27 16:11:52~[INFO]:~Pulling EQ Commerce Orders...
+2023-06-27 16:11:52~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-06-27 16:11:52~[INFO]:~Orders Completed Successfully!
+2023-06-27 18:43:49~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-06-27 18:43:49~[INFO]:~GetCategories Has Started...
+2023-06-27 18:43:49~[INFO]:~GetCategories() Completed Successfully!
+2023-06-30 09:13:18~[INFO]:~ajaxfile.php Executing Action: orders
+2023-06-30 09:13:18~[INFO]:~Pulling EQ Commerce Orders...
+2023-06-30 09:13:18~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-06-30 09:13:18~[INFO]:~Orders Completed Successfully!
+2023-07-06 15:45:41~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-06 15:45:41~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-06 15:45:41~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-06 15:45:41~[INFO]:~Orders Completed Successfully!
+2023-07-06 16:42:01~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-06 16:42:01~[INFO]:~GetCategories Has Started...
+2023-07-06 16:42:01~[INFO]:~GetCategories() Completed Successfully!
+2023-07-06 16:42:03~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-06 16:42:03~[INFO]:~GetProducts() Started...
+2023-07-06 16:42:03~[INFO]:~GetProducts() Completed Successfully!
+2023-07-06 16:42:07~[INFO]:~ajaxfile.php Executing Action: getshipping
+2023-07-06 16:42:07~[INFO]:~GetShipping() Started...
+2023-07-06 16:42:07~[INFO]:~GetShipping() Completed Successfully!
+2023-07-06 16:42:08~[INFO]:~ajaxfile.php Executing Action: taxsettings
+2023-07-06 16:42:08~[INFO]:~TaxSettings() Started...
+2023-07-06 16:42:08~[INFO]:~TaxSettings() Completed Successfully!
+2023-07-06 16:42:09~[INFO]:~ajaxfile.php Executing Action: payment_gatways
+2023-07-06 16:42:09~[INFO]:~Payment_Gateways() Started...
+2023-07-06 16:42:09~[INFO]:~Payment_Gateways() Completed Successfully!
+2023-07-06 16:42:09~[INFO]:~ajaxfile.php Executing Action: paytypes
+2023-07-06 16:42:09~[INFO]:~PayTypes() Started...
+2023-07-06 16:42:09~[INFO]:~PayTypes() PayType: elavon
+2023-07-06 16:42:09~[INFO]:~PaymentTypes() Selected API: 'Elavon'
+2023-07-06 16:42:09~[INFO]:~PayTypes() Completed Successfully!
+2023-07-06 16:42:10~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-07-06 16:42:10~[INFO]:~Coupon_Settings() Started...
+2023-07-06 16:42:10~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-07-06 16:42:12~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-06 16:42:12~[INFO]:~GetProducts() Started...
+2023-07-06 16:42:12~[INFO]:~GetProducts() Completed Successfully!
+2023-07-06 16:42:14~[INFO]:~ajaxfile.php Executing Action: editproduct
+2023-07-06 16:42:14~[INFO]:~EditProduct() Started...
+2023-07-06 16:42:14~[INFO]:~EditProduct() ID Selected: 1509
+2023-07-06 16:42:14~[INFO]:~EditProduct() Completed Successfully!
+2023-07-06 16:42:21~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-06 16:42:21~[INFO]:~SelectAttr() Started...
+2023-07-06 16:42:21~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-06 16:42:23~[INFO]:~ajaxfile.php Executing Action: editattr
+2023-07-06 16:42:23~[INFO]:~EditAttrs() Started...
+2023-07-06 16:42:23~[INFO]:~EditAttrs() Selected Attribute ID: 2
+2023-07-06 16:42:23~[INFO]:~EditAttrs() Completed Successfully!
+2023-07-06 16:42:31~[INFO]:~ajaxfile.php Executing Action: modifyattrs_add
+2023-07-06 16:42:31~[INFO]:~ModifyAttrs_Add() Started...
+2023-07-06 16:42:31~[INFO]:~ModifyAttrs_Add() Completed Successfully!
+2023-07-06 16:42:40~[INFO]:~ajaxfile.php Executing Action: modifyattrs_add
+2023-07-06 16:42:40~[INFO]:~ModifyAttrs_Add() Started...
+2023-07-06 16:42:40~[INFO]:~ModifyAttrs_Add() Completed Successfully!
+2023-07-06 16:42:40~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-06 16:42:40~[INFO]:~SelectAttr() Started...
+2023-07-06 16:42:40~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-06 16:42:49~[INFO]:~ajaxfile.php Executing Action: createproductfin
+2023-07-06 16:42:49~[INFO]:~createProductFin() Started...
+2023-07-06 16:42:49~[INFO]:~CreateProductFin() Completed Successfully!
+2023-07-17 15:48:23~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-17 15:48:23~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-17 15:48:23~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-17 15:48:23~[INFO]:~Orders Completed Successfully!
+2023-07-17 15:48:28~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-17 15:48:28~[INFO]:~GetProducts() Started...
+2023-07-17 15:48:28~[INFO]:~GetProducts() Completed Successfully!
+2023-07-17 15:56:26~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-17 15:56:26~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-17 15:56:26~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-17 15:56:26~[INFO]:~Orders Completed Successfully!
+2023-07-17 16:21:56~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-07-19 09:36:34~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-19 09:36:34~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-19 09:36:34~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-19 09:36:34~[INFO]:~Orders Completed Successfully!
+2023-07-19 09:36:37~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-19 09:36:37~[INFO]:~GetProducts() Started...
+2023-07-19 09:36:37~[INFO]:~GetProducts() Completed Successfully!
+2023-07-19 09:36:41~[INFO]:~ajaxfile.php Executing Action: editproduct
+2023-07-19 09:36:41~[INFO]:~EditProduct() Started...
+2023-07-19 09:36:41~[INFO]:~EditProduct() ID Selected: 1508
+2023-07-19 09:36:41~[INFO]:~EditProduct() Completed Successfully!
+2023-07-19 09:37:05~[INFO]:~ajaxfile.php Executing Action: createproductfin
+2023-07-19 09:37:05~[INFO]:~createProductFin() Started...
+2023-07-19 09:37:05~[INFO]:~CreateProductFin() Completed Successfully!
+2023-07-20 09:23:46~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-20 09:23:46~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-20 09:23:46~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-20 09:23:46~[INFO]:~Orders Completed Successfully!
+2023-07-20 09:23:48~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-20 09:23:48~[INFO]:~GetProducts() Started...
+2023-07-20 09:23:48~[INFO]:~GetProducts() Completed Successfully!
+2023-07-20 09:23:51~[INFO]:~ajaxfile.php Executing Action: editproduct
+2023-07-20 09:23:51~[INFO]:~EditProduct() Started...
+2023-07-20 09:23:51~[INFO]:~EditProduct() ID Selected: 1509
+2023-07-20 09:23:51~[INFO]:~EditProduct() Completed Successfully!
+2023-07-20 09:24:10~[INFO]:~ajaxfile.php Executing Action: createproductfin
+2023-07-20 09:24:10~[INFO]:~createProductFin() Started...
+2023-07-20 09:24:10~[INFO]:~CreateProductFin() Completed Successfully!
+2023-07-20 15:17:56~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-20 15:17:56~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-20 15:17:56~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-20 15:17:56~[INFO]:~Orders Completed Successfully!
+2023-07-20 15:18:05~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-20 15:18:05~[INFO]:~GetCategories Has Started...
+2023-07-20 15:18:05~[INFO]:~GetCategories() Completed Successfully!
+2023-07-20 15:18:07~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-20 15:18:07~[INFO]:~GetProducts() Started...
+2023-07-20 15:18:07~[INFO]:~GetProducts() Completed Successfully!
+2023-07-20 15:18:08~[INFO]:~ajaxfile.php Executing Action: editproduct
+2023-07-20 15:18:08~[INFO]:~EditProduct() Started...
+2023-07-20 15:18:08~[INFO]:~EditProduct() ID Selected: 1508
+2023-07-20 15:18:08~[INFO]:~EditProduct() Completed Successfully!
+2023-07-20 15:18:20~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-20 15:18:20~[INFO]:~SelectAttr() Started...
+2023-07-20 15:18:20~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-20 15:18:25~[INFO]:~ajaxfile.php Executing Action: buildattrs_stepone
+2023-07-20 15:18:25~[INFO]:~BuildAttrs_StepOne() Started...
+2023-07-20 15:18:25~[INFO]:~BuildAttrs_StepOne() Completed Successfully!
+2023-07-20 15:18:27~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-20 15:18:27~[INFO]:~SelectAttr() Started...
+2023-07-20 15:18:27~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-20 15:18:35~[INFO]:~ajaxfile.php Executing Action: editattr
+2023-07-20 15:18:35~[INFO]:~EditAttrs() Started...
+2023-07-20 15:18:35~[INFO]:~EditAttrs() Selected Attribute ID: 2
+2023-07-20 15:18:35~[INFO]:~EditAttrs() Completed Successfully!
+2023-07-20 15:18:53~[INFO]:~ajaxfile.php Executing Action: buildattrs_add
+2023-07-20 15:18:53~[INFO]:~BuildAttrs_Add() Started...
+2023-07-20 15:18:53~[INFO]:~BuildAttrs_Add() Completed Successfully!
+2023-07-20 15:18:54~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-20 15:18:54~[INFO]:~SelectAttr() Started...
+2023-07-20 15:18:54~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-20 15:19:01~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-20 15:19:01~[INFO]:~SelectAttr() Started...
+2023-07-20 15:19:01~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-20 15:19:18~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-20 15:19:18~[INFO]:~SelectAttr() Started...
+2023-07-20 15:19:18~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-20 15:22:43~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-20 15:22:43~[INFO]:~SelectAttr() Started...
+2023-07-20 15:22:43~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-20 15:22:45~[INFO]:~ajaxfile.php Executing Action: editattr
+2023-07-20 15:22:45~[INFO]:~EditAttrs() Started...
+2023-07-20 15:22:45~[INFO]:~EditAttrs() Selected Attribute ID: 2
+2023-07-20 15:22:45~[INFO]:~EditAttrs() Completed Successfully!
+2023-07-20 15:22:58~[INFO]:~ajaxfile.php Executing Action: buildattrs_add
+2023-07-20 15:22:58~[INFO]:~BuildAttrs_Add() Started...
+2023-07-20 15:22:58~[INFO]:~BuildAttrs_Add() Completed Successfully!
+2023-07-20 15:23:00~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-20 15:23:00~[INFO]:~SelectAttr() Started...
+2023-07-20 15:23:00~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-20 15:23:09~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-20 15:23:09~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-20 15:23:09~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-20 15:23:09~[INFO]:~Orders Completed Successfully!
+2023-07-20 15:23:11~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-20 15:23:11~[INFO]:~GetProducts() Started...
+2023-07-20 15:23:11~[INFO]:~GetProducts() Completed Successfully!
+2023-07-20 15:23:12~[INFO]:~ajaxfile.php Executing Action: editproduct
+2023-07-20 15:23:12~[INFO]:~EditProduct() Started...
+2023-07-20 15:23:12~[INFO]:~EditProduct() ID Selected: 1508
+2023-07-20 15:23:12~[INFO]:~EditProduct() Completed Successfully!
+2023-07-20 15:23:22~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-20 15:23:22~[INFO]:~SelectAttr() Started...
+2023-07-20 15:23:22~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-20 15:23:25~[INFO]:~ajaxfile.php Executing Action: editattr
+2023-07-20 15:23:25~[INFO]:~EditAttrs() Started...
+2023-07-20 15:23:25~[INFO]:~EditAttrs() Selected Attribute ID: 2
+2023-07-20 15:23:25~[INFO]:~EditAttrs() Completed Successfully!
+2023-07-20 15:23:47~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-20 15:23:47~[INFO]:~GetCategories Has Started...
+2023-07-20 15:23:47~[INFO]:~GetCategories() Completed Successfully!
+2023-07-20 15:23:48~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-20 15:23:48~[INFO]:~Editing Custom Category...
+2023-07-20 15:23:48~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-20 15:23:48~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-20 15:23:54~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-20 15:23:54~[INFO]:~SaveCat() Started...
+2023-07-20 15:23:54~[INFO]:~SaveCat() 'selecteditems' = [{
+2023-07-20 15:23:54~[INFO]:~Updated Category '100-Series-Tractors' Successfully.
+2023-07-20 15:23:59~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-20 15:23:59~[INFO]:~GetProducts() Started...
+2023-07-20 15:23:59~[INFO]:~GetProducts() Completed Successfully!
+2023-07-20 15:24:17~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-07-20 15:24:17~[INFO]:~Coupon_Settings() Started...
+2023-07-20 15:24:17~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-07-20 15:24:19~[INFO]:~ajaxfile.php Executing Action: edit_coupon
+2023-07-20 15:24:19~[INFO]:~Edit_Coupon() Started...
+2023-07-20 15:24:19~[INFO]:~Edit_Coupon() Coupon ID: 2
+2023-07-20 15:24:19~[INFO]:~Edit_Coupon() Completed Successfully!
+2023-07-20 15:24:25~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-07-20 15:24:25~[INFO]:~Coupon_Settings() Started...
+2023-07-20 15:24:25~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-07-20 15:24:29~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-20 15:24:29~[INFO]:~GetProducts() Started...
+2023-07-20 15:24:29~[INFO]:~GetProducts() Completed Successfully!
+2023-07-21 12:42:53~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 12:42:53~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 12:42:53~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 12:42:53~[INFO]:~Orders Completed Successfully!
+2023-07-21 12:42:54~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 12:42:54~[INFO]:~GetCategories Has Started...
+2023-07-21 12:42:54~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 12:42:56~[INFO]:~ajaxfile.php Executing Action: createcustcat
+2023-07-21 12:42:56~[INFO]:~Opening Category Creator...
+2023-07-21 12:42:56~[INFO]:~Create Category Form Has Been Created!
+2023-07-21 12:43:46~[INFO]:~ajaxfile.php Executing Action: opencats
+2023-07-21 12:43:46~[INFO]:~OpenCats() Started...
+2023-07-21 12:43:46~[INFO]:~OpenCats() Check-Data = 
+2023-07-21 12:43:46~[INFO]:~OpenCats() Completed Successfully!
+2023-07-21 12:44:03~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-21 12:44:03~[INFO]:~SaveCat() Started...
+2023-07-21 12:44:03~[INFO]:~SaveCat() 'selecteditems' = [{"type":"cat","id":666}]
+2023-07-21 12:44:17~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-21 12:44:17~[INFO]:~SaveCat() Started...
+2023-07-21 12:44:17~[INFO]:~SaveCat() 'selecteditems' = [{"type":"cat","id":666}]
+2023-07-21 12:44:17~[INFO]:~Updated Category 'EStore' Successfully.
+2023-07-21 12:44:22~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 12:44:22~[INFO]:~GetCategories Has Started...
+2023-07-21 12:44:22~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 13:18:17~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 13:18:17~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 13:18:17~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 13:18:17~[INFO]:~Orders Completed Successfully!
+2023-07-21 13:18:18~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 13:18:18~[INFO]:~GetCategories Has Started...
+2023-07-21 13:18:18~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 13:18:20~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-21 13:18:20~[INFO]:~Editing Custom Category...
+2023-07-21 13:18:20~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-21 13:18:20~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-21 13:18:23~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 13:18:23~[INFO]:~GetCategories Has Started...
+2023-07-21 13:18:23~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 13:18:24~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-21 13:18:24~[INFO]:~Editing Custom Category...
+2023-07-21 13:18:24~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-21 13:18:24~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-21 13:18:51~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-21 13:18:51~[INFO]:~SaveCat() Started...
+2023-07-21 13:18:51~[INFO]:~SaveCat() 'selecteditems' = [{
+2023-07-21 13:18:51~[INFO]:~Updated Category '100-Series-Tractors' Successfully.
+2023-07-21 13:18:52~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 13:18:52~[INFO]:~GetCategories Has Started...
+2023-07-21 13:18:52~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 13:19:34~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 13:19:34~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 13:19:34~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 13:19:34~[INFO]:~Orders Completed Successfully!
+2023-07-21 13:19:35~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 13:19:35~[INFO]:~GetCategories Has Started...
+2023-07-21 13:19:35~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 13:19:36~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-21 13:19:36~[INFO]:~Editing Custom Category...
+2023-07-21 13:19:36~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-21 13:19:36~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-21 13:20:02~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 13:20:02~[INFO]:~GetCategories Has Started...
+2023-07-21 13:20:02~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 13:20:03~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-21 13:20:03~[INFO]:~Editing Custom Category...
+2023-07-21 13:20:03~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-21 13:20:03~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-21 13:20:07~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 13:20:07~[INFO]:~GetCategories Has Started...
+2023-07-21 13:20:07~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 13:20:08~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-21 13:20:08~[INFO]:~Editing Custom Category...
+2023-07-21 13:20:08~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-21 13:20:08~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-21 13:20:13~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-21 13:20:13~[INFO]:~SaveCat() Started...
+2023-07-21 13:20:13~[INFO]:~SaveCat() 'selecteditems' = [{
+2023-07-21 13:20:13~[INFO]:~Updated Category 'EStore' Successfully.
+2023-07-21 13:27:18~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 13:27:18~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 13:27:18~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 13:27:18~[INFO]:~Orders Completed Successfully!
+2023-07-21 14:01:16~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 14:01:16~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 14:01:16~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 14:01:16~[INFO]:~Orders Completed Successfully!
+2023-07-21 16:55:43~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 16:55:43~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 16:55:43~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 16:55:43~[INFO]:~Orders Completed Successfully!
+2023-07-21 16:55:44~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 16:55:44~[INFO]:~GetCategories Has Started...
+2023-07-21 16:55:44~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 16:55:50~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-21 16:55:50~[INFO]:~GetProducts() Started...
+2023-07-21 16:55:50~[INFO]:~GetProducts() Completed Successfully!
+2023-07-21 16:55:53~[INFO]:~ajaxfile.php Executing Action: createproduct
+2023-07-21 16:55:53~[INFO]:~createProduct() Started...
+2023-07-21 16:55:53~[INFO]:~CreateProduct() Completed Successfully!
+2023-07-21 16:56:59~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-21 16:56:59~[INFO]:~SelectAttr() Started...
+2023-07-21 16:56:59~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-21 16:57:15~[INFO]:~ajaxfile.php Executing Action: createproductfin
+2023-07-21 16:57:15~[INFO]:~createProductFin() Started...
+2023-07-21 16:57:15~[INFO]:~CreateProductFin() - 1 Rows
+2023-07-21 16:57:15~[INFO]:~CreateProductFin() Completed Successfully!
+2023-07-21 16:57:20~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-21 16:57:20~[INFO]:~GetProducts() Started...
+2023-07-21 16:57:20~[INFO]:~GetProducts() Completed Successfully!
+2023-07-21 16:57:25~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 16:57:25~[INFO]:~GetCategories Has Started...
+2023-07-21 16:57:25~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 17:01:43~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 17:01:43~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 17:01:43~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 17:01:43~[INFO]:~Orders Completed Successfully!
+2023-07-21 17:01:45~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 17:01:45~[INFO]:~GetCategories Has Started...
+2023-07-21 17:01:45~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 17:03:07~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 17:03:07~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 17:03:07~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 17:03:07~[INFO]:~Orders Completed Successfully!
+2023-07-21 17:03:08~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 17:03:08~[INFO]:~GetCategories Has Started...
+2023-07-21 17:03:08~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 17:03:13~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 17:03:13~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 17:03:13~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 17:03:13~[INFO]:~Orders Completed Successfully!
+2023-07-21 17:03:14~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 17:03:14~[INFO]:~GetCategories Has Started...
+2023-07-21 17:03:14~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 17:03:50~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 17:03:50~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 17:03:50~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 17:03:50~[INFO]:~Orders Completed Successfully!
+2023-07-21 17:03:51~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 17:03:51~[INFO]:~GetCategories Has Started...
+2023-07-21 17:03:51~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 17:04:48~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-21 17:04:48~[INFO]:~Editing Custom Category...
+2023-07-21 17:04:48~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-21 17:04:48~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-21 17:04:50~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-07-21 17:06:32~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 17:06:32~[INFO]:~GetCategories Has Started...
+2023-07-21 17:06:32~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 17:06:34~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-21 17:06:34~[INFO]:~Editing Custom Category...
+2023-07-21 17:06:34~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-21 17:06:34~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-21 17:06:39~[INFO]:~ajaxfile.php Executing Action: opencats
+2023-07-21 17:06:39~[INFO]:~OpenCats() Started...
+2023-07-21 17:06:39~[INFO]:~OpenCats() Check-Data = 
+2023-07-21 17:06:39~[INFO]:~OpenCats() Completed Successfully!
+2023-07-21 17:06:49~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-21 17:06:49~[INFO]:~SaveCat() Started...
+2023-07-21 17:06:49~[INFO]:~SaveCat() 'selecteditems' = [{"type":"prod","id":1508},{"type":"prod","id":1509},{"type":"cat","id":670}]
+2023-07-21 17:06:49~[INFO]:~Updated Category '130-Series-Tractors' Successfully.
+2023-07-21 17:07:21~[INFO]:~ajaxfile.php Executing Action: openprods
+2023-07-21 17:07:21~[INFO]:~OpenProds() Started...
+2023-07-21 17:07:21~[INFO]:~OpenProds() Check-Data = Array
+2023-07-21 17:07:21~[INFO]:~OpenProds() Completed Successfully!
+2023-07-21 17:07:27~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-21 17:07:27~[INFO]:~SaveCat() Started...
+2023-07-21 17:07:27~[INFO]:~SaveCat() 'selecteditems' = [{"type":"prod","id":1508},{"type":"prod","id":1509},{"type":"prod","id":1510}]
+2023-07-21 17:07:27~[INFO]:~Updated Category '130-Series-Tractors' Successfully.
+2023-07-21 17:07:44~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 17:07:44~[INFO]:~GetCategories Has Started...
+2023-07-21 17:07:44~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 17:07:46~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-21 17:07:46~[INFO]:~Editing Custom Category...
+2023-07-21 17:07:46~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-21 17:07:46~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-21 17:07:51~[INFO]:~ajaxfile.php Executing Action: openprods
+2023-07-21 17:07:51~[INFO]:~OpenProds() Started...
+2023-07-21 17:07:51~[INFO]:~OpenProds() Check-Data = Array
+2023-07-21 17:07:51~[INFO]:~OpenProds() Completed Successfully!
+2023-07-21 17:08:03~[INFO]:~ajaxfile.php Executing Action: openprods
+2023-07-21 17:08:03~[INFO]:~OpenProds() Started...
+2023-07-21 17:08:03~[INFO]:~OpenProds() Check-Data = Array
+2023-07-21 17:08:03~[INFO]:~OpenProds() Completed Successfully!
+2023-07-21 17:08:08~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-21 17:08:08~[INFO]:~SaveCat() Started...
+2023-07-21 17:08:08~[INFO]:~SaveCat() 'selecteditems' = [{"type":"prod","id":1508},{"type":"prod","id":1509},{"type":"prod","id":1510}]
+2023-07-21 17:08:08~[INFO]:~Updated Category '120-Series-Tractors' Successfully.
+2023-07-21 17:08:12~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 17:08:12~[INFO]:~GetCategories Has Started...
+2023-07-21 17:08:12~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 17:08:14~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-21 17:08:14~[INFO]:~Editing Custom Category...
+2023-07-21 17:08:14~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-21 17:08:14~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-21 18:01:25~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 18:01:25~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 18:01:25~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 18:01:25~[INFO]:~Orders Completed Successfully!
+2023-07-21 18:01:31~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 18:01:31~[INFO]:~GetCategories Has Started...
+2023-07-21 18:01:31~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 18:01:34~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-21 18:01:34~[INFO]:~Editing Custom Category...
+2023-07-21 18:01:34~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-21 18:01:34~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-21 18:02:14~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 18:02:14~[INFO]:~GetCategories Has Started...
+2023-07-21 18:02:14~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 18:02:21~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-21 18:02:21~[INFO]:~Editing Custom Category...
+2023-07-21 18:02:21~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-21 18:02:21~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-21 18:02:32~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-21 18:02:32~[INFO]:~GetCategories Has Started...
+2023-07-21 18:02:32~[INFO]:~GetCategories() Completed Successfully!
+2023-07-21 18:02:33~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-07-21 18:02:33~[INFO]:~GetProducts() Started...
+2023-07-21 18:02:33~[INFO]:~GetProducts() Completed Successfully!
+2023-07-21 18:02:36~[INFO]:~ajaxfile.php Executing Action: editproduct
+2023-07-21 18:02:36~[INFO]:~EditProduct() Started...
+2023-07-21 18:02:36~[INFO]:~EditProduct() ID Selected: 1508
+2023-07-21 18:02:36~[INFO]:~EditProduct() Completed Successfully!
+2023-07-21 18:02:47~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-07-21 18:02:47~[INFO]:~SelectAttr() Started...
+2023-07-21 18:02:47~[INFO]:~SelectAttr() Completed Successfully!
+2023-07-21 18:02:49~[INFO]:~ajaxfile.php Executing Action: editattr
+2023-07-21 18:02:49~[INFO]:~EditAttrs() Started...
+2023-07-21 18:02:49~[INFO]:~EditAttrs() Selected Attribute ID: 2
+2023-07-21 18:02:49~[INFO]:~EditAttrs() Completed Successfully!
+2023-07-21 18:05:06~[INFO]:~ajaxfile.php Executing Action: getshipping
+2023-07-21 18:05:06~[INFO]:~GetShipping() Started...
+2023-07-21 18:05:06~[INFO]:~GetShipping() Completed Successfully!
+2023-07-21 18:06:00~[INFO]:~ajaxfile.php Executing Action: getshipping
+2023-07-21 18:06:00~[INFO]:~GetShipping() Started...
+2023-07-21 18:06:00~[INFO]:~GetShipping() Completed Successfully!
+2023-07-21 18:06:01~[INFO]:~ajaxfile.php Executing Action: taxsettings
+2023-07-21 18:06:01~[INFO]:~TaxSettings() Started...
+2023-07-21 18:06:01~[INFO]:~TaxSettings() Completed Successfully!
+2023-07-21 18:06:41~[INFO]:~ajaxfile.php Executing Action: payment_gatways
+2023-07-21 18:06:41~[INFO]:~Payment_Gateways() Started...
+2023-07-21 18:06:41~[INFO]:~Payment_Gateways() Completed Successfully!
+2023-07-21 18:06:41~[INFO]:~ajaxfile.php Executing Action: paytypes
+2023-07-21 18:06:41~[INFO]:~PayTypes() Started...
+2023-07-21 18:06:41~[INFO]:~PayTypes() PayType: elavon
+2023-07-21 18:06:41~[INFO]:~PaymentTypes() Selected API: 'Elavon'
+2023-07-21 18:06:41~[INFO]:~PayTypes() Completed Successfully!
+2023-07-21 18:07:22~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-07-21 18:07:22~[INFO]:~Coupon_Settings() Started...
+2023-07-21 18:07:22~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-07-21 18:07:27~[INFO]:~ajaxfile.php Executing Action: modsalesreceipt
+2023-07-21 18:07:27~[INFO]:~ModSalesReceipt() Started...
+2023-07-21 18:07:27~[INFO]:~ModSalesReceipt() Completed Successfully!
+2023-07-21 18:07:47~[INFO]:~ajaxfile.php Executing Action: orders
+2023-07-21 18:07:47~[INFO]:~Pulling EQ Commerce Orders...
+2023-07-21 18:07:47~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-07-21 18:07:47~[INFO]:~Orders Completed Successfully!
+2023-07-23 19:32:44~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-23 19:32:44~[INFO]:~GetCategories Has Started...
+2023-07-23 19:32:44~[INFO]:~GetCategories() Completed Successfully!
+2023-07-23 19:32:50~[INFO]:~ajaxfile.php Executing Action: createcustcat
+2023-07-23 19:32:50~[INFO]:~Opening Category Creator...
+2023-07-23 19:32:50~[INFO]:~Create Category Form Has Been Created!
+2023-07-23 19:33:35~[INFO]:~ajaxfile.php Executing Action: opencats
+2023-07-23 19:33:35~[INFO]:~OpenCats() Started...
+2023-07-23 19:33:35~[INFO]:~OpenCats() Check-Data = 
+2023-07-23 19:33:35~[INFO]:~OpenCats() Completed Successfully!
+2023-07-23 19:33:49~[INFO]:~ajaxfile.php Executing Action: opencats
+2023-07-23 19:33:49~[INFO]:~OpenCats() Started...
+2023-07-23 19:33:49~[INFO]:~OpenCats() Check-Data = 
+2023-07-23 19:33:49~[INFO]:~OpenCats() Completed Successfully!
+2023-07-23 19:34:05~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-23 19:34:05~[INFO]:~SaveCat() Started...
+2023-07-23 19:34:05~[INFO]:~SaveCat() 'selecteditems' = [{"type":"cat","id":670}]
+2023-07-23 19:34:12~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-23 19:34:12~[INFO]:~GetCategories Has Started...
+2023-07-23 19:34:12~[INFO]:~GetCategories() Completed Successfully!
+2023-07-23 19:34:17~[INFO]:~ajaxfile.php Executing Action: createcustcat
+2023-07-23 19:34:17~[INFO]:~Opening Category Creator...
+2023-07-23 19:34:17~[INFO]:~Create Category Form Has Been Created!
+2023-07-23 19:34:33~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-23 19:34:33~[INFO]:~GetCategories Has Started...
+2023-07-23 19:34:33~[INFO]:~GetCategories() Completed Successfully!
+2023-07-23 19:34:35~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-23 19:34:35~[INFO]:~Editing Custom Category...
+2023-07-23 19:34:35~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-23 19:34:35~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-23 19:34:40~[INFO]:~ajaxfile.php Executing Action: opencats
+2023-07-23 19:34:40~[INFO]:~OpenCats() Started...
+2023-07-23 19:34:40~[INFO]:~OpenCats() Check-Data = Array
+2023-07-23 19:34:40~[INFO]:~OpenCats() Completed Successfully!
+2023-07-23 19:34:57~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-23 19:34:57~[INFO]:~SaveCat() Started...
+2023-07-23 19:34:57~[INFO]:~SaveCat() 'selecteditems' = [{"type":"cat","id":670},{"type":"cat","id":669},{"type":"cat","id":668},{"type":"cat","id":666}]
+2023-07-23 19:34:57~[INFO]:~Updated Category 'Lawn-Tractors' Successfully.
+2023-07-23 19:35:00~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-23 19:35:00~[INFO]:~GetCategories Has Started...
+2023-07-23 19:35:00~[INFO]:~GetCategories() Completed Successfully!
+2023-07-23 19:35:06~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-23 19:35:06~[INFO]:~Editing Custom Category...
+2023-07-23 19:35:06~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-23 19:35:06~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-23 19:35:18~[INFO]:~ajaxfile.php Executing Action: opencats
+2023-07-23 19:35:18~[INFO]:~OpenCats() Started...
+2023-07-23 19:35:18~[INFO]:~OpenCats() Check-Data = Array
+2023-07-23 19:35:18~[INFO]:~OpenCats() Completed Successfully!
+2023-07-23 19:35:29~[INFO]:~ajaxfile.php Executing Action: opencats
+2023-07-23 19:35:29~[INFO]:~OpenCats() Started...
+2023-07-23 19:35:29~[INFO]:~OpenCats() Check-Data = Array
+2023-07-23 19:35:29~[INFO]:~OpenCats() Completed Successfully!
+2023-07-23 19:35:50~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-23 19:35:50~[INFO]:~SaveCat() Started...
+2023-07-23 19:35:50~[INFO]:~SaveCat() 'selecteditems' = [{"type":"cat","id":666},{"type":"cat","id":668},{"type":"cat","id":669},{"type":"cat","id":671},{"type":"cat","id":670}]
+2023-07-23 19:35:50~[INFO]:~Updated Category 'EStore' Successfully.
+2023-07-23 19:35:52~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-23 19:35:52~[INFO]:~GetCategories Has Started...
+2023-07-23 19:35:52~[INFO]:~GetCategories() Completed Successfully!
+2023-07-23 19:35:55~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-23 19:35:55~[INFO]:~Editing Custom Category...
+2023-07-23 19:35:55~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-23 19:35:55~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-23 19:36:05~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-23 19:36:05~[INFO]:~SaveCat() Started...
+2023-07-23 19:36:05~[INFO]:~SaveCat() 'selecteditems' = [{
+2023-07-23 19:36:05~[INFO]:~Updated Category '100-Series-Tractors' Successfully.
+2023-07-23 19:36:07~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-23 19:36:07~[INFO]:~GetCategories Has Started...
+2023-07-23 19:36:07~[INFO]:~GetCategories() Completed Successfully!
+2023-07-23 19:36:36~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-23 19:36:36~[INFO]:~Editing Custom Category...
+2023-07-23 19:36:36~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-23 19:36:36~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-23 19:37:47~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-23 19:37:47~[INFO]:~GetCategories Has Started...
+2023-07-23 19:37:47~[INFO]:~GetCategories() Completed Successfully!
+2023-07-23 19:38:08~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-23 19:38:08~[INFO]:~Editing Custom Category...
+2023-07-23 19:38:08~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-23 19:38:08~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-23 19:38:11~[INFO]:~ajaxfile.php Executing Action: opencats
+2023-07-23 19:38:11~[INFO]:~OpenCats() Started...
+2023-07-23 19:38:11~[INFO]:~OpenCats() Check-Data = Array
+2023-07-23 19:38:11~[INFO]:~OpenCats() Completed Successfully!
+2023-07-23 19:38:22~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-23 19:38:22~[INFO]:~SaveCat() Started...
+2023-07-23 19:38:22~[INFO]:~SaveCat() 'selecteditems' = [{"type":"cat","id":671}]
+2023-07-23 19:38:22~[INFO]:~Updated Category 'EStore' Successfully.
+2023-07-23 19:38:24~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-07-23 19:38:24~[INFO]:~GetCategories Has Started...
+2023-07-23 19:38:24~[INFO]:~GetCategories() Completed Successfully!
+2023-07-24 08:41:32~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-07-24 08:41:32~[INFO]:~Editing Custom Category...
+2023-07-24 08:41:32~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-07-24 08:41:32~[INFO]:~'Edit Category' Form Created Successfully!
+2023-07-24 08:41:35~[INFO]:~ajaxfile.php Executing Action: opencats
+2023-07-24 08:41:35~[INFO]:~OpenCats() Started...
+2023-07-24 08:41:35~[INFO]:~OpenCats() Check-Data = Array
+2023-07-24 08:41:35~[INFO]:~OpenCats() Completed Successfully!
+2023-07-24 08:41:59~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-07-24 08:41:59~[INFO]:~SaveCat() Started...
+2023-07-24 08:41:59~[INFO]:~SaveCat() 'selecteditems' = [{"type":"cat","id":671},{"type":"cat","id":670},{"type":"cat","id":669},{"type":"cat","id":668},{"type":"cat","id":666}]
+2023-07-24 08:41:59~[INFO]:~Updated Category 'EStore' Successfully.
+2023-08-09 14:20:55~[INFO]:~ajaxfile.php Executing Action: orders
+2023-08-09 14:20:55~[INFO]:~Pulling EQ Commerce Orders...
+2023-08-09 14:20:55~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-08-09 14:20:55~[INFO]:~Orders Completed Successfully!
+2023-08-09 14:20:57~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-09 14:20:57~[INFO]:~GetCategories Has Started...
+2023-08-09 14:20:57~[INFO]:~GetCategories() Completed Successfully!
+2023-08-09 14:21:00~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-09 14:21:00~[INFO]:~Editing Custom Category...
+2023-08-09 14:21:00~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-09 14:21:00~[INFO]:~'Edit Category' Form Created Successfully!
+2023-08-09 14:21:03~[INFO]:~ajaxfile.php Executing Action: openprods
+2023-08-09 14:21:03~[INFO]:~OpenProds() Started...
+2023-08-09 14:21:03~[INFO]:~OpenProds() Check-Data = Array
+2023-08-09 14:21:03~[INFO]:~OpenProds() Completed Successfully!
+2023-08-09 14:21:09~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-08-09 14:21:09~[INFO]:~SaveCat() Started...
+2023-08-09 14:21:09~[INFO]:~SaveCat() 'selecteditems' = [{"type":"prod","id":1508},{"type":"prod","id":1509},{"type":"prod","id":1510}]
+2023-08-09 14:21:09~[INFO]:~Updated Category '100-Series-Tractors' Successfully.
+2023-08-09 14:21:14~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-09 14:21:14~[INFO]:~GetCategories Has Started...
+2023-08-09 14:21:14~[INFO]:~GetCategories() Completed Successfully!
+2023-08-09 14:21:16~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-09 14:21:16~[INFO]:~Editing Custom Category...
+2023-08-09 14:21:16~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-09 14:21:16~[INFO]:~'Edit Category' Form Created Successfully!
+2023-08-09 14:21:18~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-09 14:21:18~[INFO]:~GetCategories Has Started...
+2023-08-09 14:21:18~[INFO]:~GetCategories() Completed Successfully!
+2023-08-09 14:21:20~[INFO]:~ajaxfile.php Executing Action: createcustcat
+2023-08-09 14:21:20~[INFO]:~Opening Category Creator...
+2023-08-09 14:21:20~[INFO]:~Create Category Form Has Been Created!
+2023-08-09 14:21:44~[INFO]:~ajaxfile.php Executing Action: openprods
+2023-08-09 14:21:44~[INFO]:~OpenProds() Started...
+2023-08-09 14:21:44~[INFO]:~OpenProds() Check-Data = 
+2023-08-09 14:21:44~[INFO]:~OpenProds() Completed Successfully!
+2023-08-09 14:21:55~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-08-09 14:21:55~[INFO]:~SaveCat() Started...
+2023-08-09 14:21:55~[INFO]:~SaveCat() 'selecteditems' = [{"type":"prod","id":1510}]
+2023-08-09 14:22:00~[INFO]:~ajaxfile.php Executing Action: openprods
+2023-08-09 14:22:00~[INFO]:~OpenProds() Started...
+2023-08-09 14:22:00~[INFO]:~OpenProds() Check-Data = 
+2023-08-09 14:22:00~[INFO]:~OpenProds() Completed Successfully!
+2023-08-09 14:22:05~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-08-09 14:22:05~[INFO]:~SaveCat() Started...
+2023-08-09 14:22:05~[INFO]:~SaveCat() 'selecteditems' = [{"type":"prod","id":1510}]
+2023-08-09 14:22:05~[INFO]:~Updated Category 'Zak-Test-Category' Successfully.
+2023-08-09 14:22:10~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-09 14:22:10~[INFO]:~GetCategories Has Started...
+2023-08-09 14:22:10~[INFO]:~GetCategories() Completed Successfully!
+2023-08-09 14:22:12~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-09 14:22:12~[INFO]:~Editing Custom Category...
+2023-08-09 14:22:12~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-09 14:22:12~[INFO]:~'Edit Category' Form Created Successfully!
+2023-08-09 14:22:17~[INFO]:~ajaxfile.php Executing Action: openprods
+2023-08-09 14:22:17~[INFO]:~OpenProds() Started...
+2023-08-09 14:22:17~[INFO]:~OpenProds() Check-Data = Array
+2023-08-09 14:22:17~[INFO]:~OpenProds() Completed Successfully!
+2023-08-09 14:22:24~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-08-09 14:22:24~[INFO]:~SaveCat() Started...
+2023-08-09 14:22:24~[INFO]:~SaveCat() 'selecteditems' = [{"type":"prod","id":1510}]
+2023-08-09 14:22:24~[INFO]:~Updated Category 'Zak-Test-Category' Successfully.
+2023-08-09 14:22:26~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-09 14:22:26~[INFO]:~GetCategories Has Started...
+2023-08-09 14:22:26~[INFO]:~GetCategories() Completed Successfully!
+2023-08-09 14:22:28~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-09 14:22:28~[INFO]:~Editing Custom Category...
+2023-08-09 14:22:28~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-09 14:22:28~[INFO]:~'Edit Category' Form Created Successfully!
+2023-08-09 14:25:29~[INFO]:~ajaxfile.php Executing Action: orders
+2023-08-09 14:25:29~[INFO]:~Pulling EQ Commerce Orders...
+2023-08-09 14:25:29~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-08-09 14:25:29~[INFO]:~Orders Completed Successfully!
+2023-08-09 14:25:30~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-09 14:25:30~[INFO]:~GetCategories Has Started...
+2023-08-09 14:25:30~[INFO]:~GetCategories() Completed Successfully!
+2023-08-09 14:25:33~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-09 14:25:33~[INFO]:~Editing Custom Category...
+2023-08-09 14:25:33~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-09 14:25:33~[INFO]:~'Edit Category' Form Created Successfully!
+2023-08-09 14:25:35~[INFO]:~ajaxfile.php Executing Action: openprods
+2023-08-09 14:25:35~[INFO]:~OpenProds() Started...
+2023-08-09 14:25:35~[INFO]:~OpenProds() Check-Data = Array
+2023-08-09 14:25:35~[INFO]:~OpenProds() Completed Successfully!
+2023-08-09 14:25:42~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-08-09 14:25:42~[INFO]:~SaveCat() Started...
+2023-08-09 14:25:42~[INFO]:~SaveCat() 'selecteditems' = [{"type":"prod","id":1510}]
+2023-08-09 14:25:42~[INFO]:~Updated Category 'Zak-Test-Category' Successfully.
+2023-08-09 14:25:43~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-09 14:25:43~[INFO]:~GetCategories Has Started...
+2023-08-09 14:25:43~[INFO]:~GetCategories() Completed Successfully!
+2023-08-09 14:25:45~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-09 14:25:45~[INFO]:~Editing Custom Category...
+2023-08-09 14:25:45~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-09 14:25:45~[INFO]:~'Edit Category' Form Created Successfully!
+2023-08-09 14:27:21~[INFO]:~ajaxfile.php Executing Action: orders
+2023-08-09 14:27:21~[INFO]:~Pulling EQ Commerce Orders...
+2023-08-09 14:27:21~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-08-09 14:27:21~[INFO]:~Orders Completed Successfully!
+2023-08-09 14:27:23~[INFO]:~ajaxfile.php Executing Action: orders
+2023-08-09 14:27:23~[INFO]:~Pulling EQ Commerce Orders...
+2023-08-09 14:27:23~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-08-09 14:27:23~[INFO]:~Orders Completed Successfully!
+2023-08-09 14:27:24~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-09 14:27:24~[INFO]:~GetCategories Has Started...
+2023-08-09 14:27:24~[INFO]:~GetCategories() Completed Successfully!
+2023-08-09 14:27:26~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-09 14:27:26~[INFO]:~Editing Custom Category...
+2023-08-09 14:27:26~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-09 14:27:26~[INFO]:~'Edit Category' Form Created Successfully!
+2023-08-09 14:27:27~[INFO]:~ajaxfile.php Executing Action: openprods
+2023-08-09 14:27:27~[INFO]:~OpenProds() Started...
+2023-08-09 14:27:27~[INFO]:~OpenProds() Check-Data = Array
+2023-08-09 14:27:27~[INFO]:~OpenProds() Completed Successfully!
+2023-08-09 14:27:36~[INFO]:~ajaxfile.php Executing Action: savecat
+2023-08-09 14:27:36~[INFO]:~SaveCat() Started...
+2023-08-09 14:27:36~[INFO]:~SaveCat() 'selecteditems' = [{"type":"prod","id":1510}]
+2023-08-09 14:27:36~[INFO]:~Updated Category 'Zak-Test-Category' Successfully.
+2023-08-15 14:26:24~[INFO]:~ajaxfile.php Executing Action: orders
+2023-08-15 14:26:24~[INFO]:~Pulling EQ Commerce Orders...
+2023-08-15 14:26:24~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-08-15 14:26:24~[INFO]:~Orders Completed Successfully!
+2023-08-15 14:26:25~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-08-15 14:26:25~[INFO]:~GetProducts() Started...
+2023-08-15 14:26:25~[INFO]:~GetProducts() Completed Successfully!
+2023-08-15 14:26:27~[INFO]:~ajaxfile.php Executing Action: editproduct
+2023-08-15 14:26:27~[INFO]:~EditProduct() Started...
+2023-08-15 14:26:27~[INFO]:~EditProduct() ID Selected: 1508
+2023-08-15 14:26:27~[INFO]:~EditProduct() Completed Successfully!
+2023-08-18 13:00:46~[INFO]:~ajaxfile.php Executing Action: orders
+2023-08-18 13:00:46~[INFO]:~Pulling EQ Commerce Orders...
+2023-08-18 13:00:46~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-08-18 13:00:46~[INFO]:~Orders Completed Successfully!
+2023-08-18 13:00:49~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-08-18 13:00:49~[INFO]:~GetProducts() Started...
+2023-08-18 13:00:49~[INFO]:~GetProducts() Completed Successfully!
+2023-08-18 13:00:51~[INFO]:~ajaxfile.php Executing Action: editproduct
+2023-08-18 13:00:51~[INFO]:~EditProduct() Started...
+2023-08-18 13:00:51~[INFO]:~EditProduct() ID Selected: 1508
+2023-08-18 13:00:51~[INFO]:~EditProduct() Completed Successfully!
+2023-08-18 13:39:14~[INFO]:~ajaxfile.php Executing Action: orders
+2023-08-18 13:39:14~[INFO]:~Pulling EQ Commerce Orders...
+2023-08-18 13:39:14~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-08-18 13:39:14~[INFO]:~Orders Completed Successfully!
+2023-08-21 09:37:18~[INFO]:~ajaxfile.php Executing Action: orders
+2023-08-21 09:37:18~[INFO]:~Pulling EQ Commerce Orders...
+2023-08-21 09:37:18~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-08-21 09:37:18~[INFO]:~Orders Completed Successfully!
+2023-08-21 09:37:20~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-08-21 09:37:20~[INFO]:~GetProducts() Started...
+2023-08-21 09:37:20~[INFO]:~GetProducts() Completed Successfully!
+2023-08-21 09:37:22~[INFO]:~ajaxfile.php Executing Action: editproduct
+2023-08-21 09:37:22~[INFO]:~EditProduct() Started...
+2023-08-21 09:37:22~[INFO]:~EditProduct() ID Selected: 1508
+2023-08-21 09:37:22~[INFO]:~EditProduct() Completed Successfully!
+2023-08-21 12:54:54~[INFO]:~ajaxfile.php Executing Action: orders
+2023-08-21 12:54:54~[INFO]:~Pulling EQ Commerce Orders...
+2023-08-21 12:54:54~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-08-21 12:54:54~[INFO]:~Orders Completed Successfully!
+2023-08-21 12:54:56~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-21 12:54:56~[INFO]:~GetCategories Has Started...
+2023-08-21 12:54:56~[INFO]:~GetCategories() Completed Successfully!
+2023-08-21 12:54:57~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-21 12:54:57~[INFO]:~Editing Custom Category...
+2023-08-21 12:54:57~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-21 12:54:57~[INFO]:~'Edit Category' Form Created Successfully!
+2023-08-30 13:36:10~[INFO]:~ajaxfile.php Executing Action: orders
+2023-08-30 13:36:10~[INFO]:~Pulling EQ Commerce Orders...
+2023-08-30 13:36:10~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-08-30 13:36:10~[INFO]:~Orders Completed Successfully!
+2023-08-30 13:36:14~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-30 13:36:14~[INFO]:~GetCategories Has Started...
+2023-08-30 13:36:14~[INFO]:~GetCategories() Completed Successfully!
+2023-08-30 13:36:16~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-30 13:36:16~[INFO]:~Editing Custom Category...
+2023-08-30 13:36:16~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-30 13:36:16~[INFO]:~'Edit Category' Form Created Successfully!
+2023-08-30 13:36:22~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-30 13:36:22~[INFO]:~GetCategories Has Started...
+2023-08-30 13:36:22~[INFO]:~GetCategories() Completed Successfully!
+2023-08-30 13:36:24~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-30 13:36:24~[INFO]:~Editing Custom Category...
+2023-08-30 13:36:24~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-30 13:36:24~[INFO]:~'Edit Category' Form Created Successfully!
+2023-08-30 13:36:27~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-30 13:36:27~[INFO]:~GetCategories Has Started...
+2023-08-30 13:36:27~[INFO]:~GetCategories() Completed Successfully!
+2023-08-30 13:36:29~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-30 13:36:29~[INFO]:~Editing Custom Category...
+2023-08-30 13:36:29~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-30 13:36:29~[INFO]:~'Edit Category' Form Created Successfully!
+2023-08-30 13:36:32~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-08-30 13:36:32~[INFO]:~GetCategories Has Started...
+2023-08-30 13:36:32~[INFO]:~GetCategories() Completed Successfully!
+2023-08-30 13:36:34~[INFO]:~ajaxfile.php Executing Action: editcustcat
+2023-08-30 13:36:34~[INFO]:~Editing Custom Category...
+2023-08-30 13:36:34~[INFO]:~1 Categories Pulled From custom_equipment_pages DataTable
+2023-08-30 13:36:34~[INFO]:~'Edit Category' Form Created Successfully!
+2023-09-05 12:38:04~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-05 12:38:04~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-05 12:38:04~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-05 12:38:04~[INFO]:~Orders Completed Successfully!
+2023-09-05 12:40:34~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-09-05 12:40:34~[INFO]:~GetCategories Has Started...
+2023-09-05 12:40:34~[INFO]:~GetCategories() Completed Successfully!
+2023-09-05 13:26:41~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-05 13:26:41~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-05 13:26:41~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-05 13:26:41~[INFO]:~Orders Completed Successfully!
+2023-09-06 17:22:05~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-06 17:22:05~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-06 17:22:05~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-06 17:22:05~[INFO]:~Orders Completed Successfully!
+2023-09-06 17:22:10~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-09-06 17:22:10~[INFO]:~GetProducts() Started...
+2023-09-06 17:22:10~[INFO]:~GetProducts() Completed Successfully!
+2023-09-06 17:22:19~[INFO]:~ajaxfile.php Executing Action: editproduct
+2023-09-06 17:22:19~[INFO]:~EditProduct() Started...
+2023-09-06 17:22:19~[INFO]:~EditProduct() ID Selected: 1510
+2023-09-06 17:22:19~[INFO]:~EditProduct() Completed Successfully!
+2023-09-06 17:22:29~[INFO]:~ajaxfile.php Executing Action: selectattr
+2023-09-06 17:22:29~[INFO]:~SelectAttr() Started...
+2023-09-06 17:22:29~[INFO]:~SelectAttr() Completed Successfully!
+2023-09-06 17:22:44~[INFO]:~ajaxfile.php Executing Action: editattr
+2023-09-06 17:22:44~[INFO]:~EditAttrs() Started...
+2023-09-06 17:22:44~[INFO]:~EditAttrs() Selected Attribute ID: 4
+2023-09-06 17:22:44~[INFO]:~EditAttrs() Completed Successfully!
+2023-09-08 08:35:00~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-08 08:35:00~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-08 08:35:00~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-08 08:35:00~[INFO]:~Orders Completed Successfully!
+2023-09-08 08:35:06~[INFO]:~ajaxfile.php Executing Action: pullorder
+2023-09-08 08:35:06~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-08 08:35:06~[INFO]:~Pulled 1 Orders From custom_equipment_shop_orders DataTable.
+2023-09-08 08:35:06~[INFO]:~PullOrder Completed Successfully!
+2023-09-08 08:35:26~[INFO]:~ajaxfile.php Executing Action: getshipping
+2023-09-08 08:35:26~[INFO]:~GetShipping() Started...
+2023-09-08 08:35:26~[INFO]:~GetShipping() Completed Successfully!
+2023-09-08 08:35:31~[INFO]:~ajaxfile.php Executing Action: taxsettings
+2023-09-08 08:35:31~[INFO]:~TaxSettings() Started...
+2023-09-08 08:35:31~[INFO]:~TaxSettings() Completed Successfully!
+2023-09-08 08:36:10~[INFO]:~ajaxfile.php Executing Action: finishtax
+2023-09-08 08:36:10~[INFO]:~FinishTax() Started...
+2023-09-08 08:36:10~[INFO]:~FinishTax() API Value: hvuGeQxLR5Y4ECyt
+2023-09-08 08:36:10~[INFO]:~FinishTax() Completed Successfully!
+2023-09-08 08:36:13~[INFO]:~ajaxfile.php Executing Action: getshipping
+2023-09-08 08:36:13~[INFO]:~GetShipping() Started...
+2023-09-08 08:36:13~[INFO]:~GetShipping() Completed Successfully!
+2023-09-08 08:36:14~[INFO]:~ajaxfile.php Executing Action: taxsettings
+2023-09-08 08:36:14~[INFO]:~TaxSettings() Started...
+2023-09-08 08:36:14~[INFO]:~TaxSettings() Completed Successfully!
+2023-09-08 11:17:56~[INFO]:~ajaxfile.php Executing Action: payment_gatways
+2023-09-08 11:17:56~[INFO]:~Payment_Gateways() Started...
+2023-09-08 11:17:56~[INFO]:~Payment_Gateways() Completed Successfully!
+2023-09-08 11:17:56~[INFO]:~ajaxfile.php Executing Action: paytypes
+2023-09-08 11:17:56~[INFO]:~PayTypes() Started...
+2023-09-08 11:17:56~[INFO]:~PayTypes() PayType: elavon
+2023-09-08 11:17:56~[INFO]:~PaymentTypes() Selected API: 'Elavon'
+2023-09-08 11:17:56~[INFO]:~PayTypes() Completed Successfully!
+2023-09-08 11:17:59~[INFO]:~ajaxfile.php Executing Action: coupon_settings
+2023-09-08 11:17:59~[INFO]:~Coupon_Settings() Started...
+2023-09-08 11:17:59~[INFO]:~Coupon_Settings() Completed Successfully!
+2023-09-08 11:18:00~[INFO]:~ajaxfile.php Executing Action: modsalesreceipt
+2023-09-08 11:18:00~[INFO]:~ModSalesReceipt() Started...
+2023-09-08 11:18:00~[INFO]:~ModSalesReceipt() Completed Successfully!
+2023-09-08 11:29:13~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-08 11:29:13~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-08 11:29:13~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-08 11:29:13~[INFO]:~Orders Completed Successfully!
+2023-09-08 13:42:30~[INFO]:~ajaxfile.php Executing Action: payment_gatways
+2023-09-08 13:42:30~[INFO]:~Payment_Gateways() Started...
+2023-09-08 13:42:30~[INFO]:~Payment_Gateways() Completed Successfully!
+2023-09-08 13:42:30~[INFO]:~ajaxfile.php Executing Action: paytypes
+2023-09-08 13:42:30~[INFO]:~PayTypes() Started...
+2023-09-08 13:42:30~[INFO]:~PayTypes() PayType: elavon
+2023-09-08 13:42:30~[INFO]:~PaymentTypes() Selected API: 'Elavon'
+2023-09-08 13:42:30~[INFO]:~PayTypes() Completed Successfully!
+2023-09-08 13:42:32~[INFO]:~ajaxfile.php Executing Action: getshipping
+2023-09-08 13:42:32~[INFO]:~GetShipping() Started...
+2023-09-08 13:42:32~[INFO]:~GetShipping() Completed Successfully!
+2023-09-08 13:43:42~[INFO]:~ajaxfile.php Executing Action: settoken
+2023-09-08 13:43:42~[INFO]:~SetToken() Started...
+2023-09-08 13:43:42~[INFO]:~SetToken() Token: shippo_test_40386d54e3a680104d1985bcff1fbe93adc49090  |  shiptype: shippo  |  shipusage: create_label.
+2023-09-08 13:43:42~[INFO]:~SetToken() Completed Successfully!
+2023-09-08 14:27:30~[INFO]:~ajaxfile.php Executing Action: settoken
+2023-09-08 14:27:30~[INFO]:~SetToken() Started...
+2023-09-08 14:27:30~[INFO]:~SetToken() Token: shippo_test_40386d54e3a680104d1985bcff1fbe93adc49090  |  shiptype: shipengine  |  shipusage: create_label.
+2023-09-08 14:27:30~[INFO]:~SetToken() Completed Successfully!
+2023-09-08 14:27:41~[INFO]:~ajaxfile.php Executing Action: settoken
+2023-09-08 14:27:41~[INFO]:~SetToken() Started...
+2023-09-08 14:27:41~[INFO]:~SetToken() Token: shippo_test_40386d54e3a680104d1985bcff1fbe93adc49090  |  shiptype: shippo  |  shipusage: create_label.
+2023-09-08 14:27:41~[INFO]:~SetToken() Completed Successfully!
+2023-09-08 14:28:12~[INFO]:~ajaxfile.php Executing Action: settoken
+2023-09-08 14:28:12~[INFO]:~SetToken() Started...
+2023-09-08 14:28:12~[INFO]:~SetToken() Token: shippo_test_40386d54e3a680104d1985bcff1fbe93adc49090  |  shiptype: shippo  |  shipusage: get_estimate.
+2023-09-08 14:28:12~[INFO]:~SetToken() Completed Successfully!
+2023-09-08 14:28:21~[INFO]:~ajaxfile.php Executing Action: settoken
+2023-09-08 14:28:21~[INFO]:~SetToken() Started...
+2023-09-08 14:28:21~[INFO]:~SetToken() Token: shippo_test_40386d54e3a680104d1985bcff1fbe93adc49090  |  shiptype: shippo  |  shipusage: create_label.
+2023-09-08 14:28:21~[INFO]:~SetToken() Completed Successfully!
+2023-09-08 14:31:20~[INFO]:~ajaxfile.php Executing Action: taxsettings
+2023-09-08 14:31:20~[INFO]:~TaxSettings() Started...
+2023-09-08 14:31:20~[INFO]:~TaxSettings() Completed Successfully!
+2023-09-08 14:32:56~[INFO]:~ajaxfile.php Executing Action: modsalesreceipt
+2023-09-08 14:32:56~[INFO]:~ModSalesReceipt() Started...
+2023-09-08 14:32:56~[INFO]:~ModSalesReceipt() Completed Successfully!
+2023-09-08 14:33:59~[INFO]:~ajaxfile.php Executing Action: savesalesreceipt
+2023-09-08 14:33:59~[INFO]:~ModSalesReceipt() Started...
+2023-09-08 14:33:59~[INFO]:~SaveSalesReceipt() Completed Successfully!
+2023-09-08 14:34:02~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-08 14:34:02~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-08 14:34:02~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-08 14:34:02~[INFO]:~Orders Completed Successfully!
+2023-09-08 14:34:02~[INFO]:~ajaxfile.php Executing Action: modsalesreceipt
+2023-09-08 14:34:02~[INFO]:~ModSalesReceipt() Started...
+2023-09-08 14:34:02~[INFO]:~ModSalesReceipt() Completed Successfully!
+2023-09-08 14:36:00~[INFO]:~ajaxfile.php Executing Action: savesalesreceipt
+2023-09-08 14:36:00~[INFO]:~ModSalesReceipt() Started...
+2023-09-08 14:36:00~[INFO]:~SaveSalesReceipt() Completed Successfully!
+2023-09-08 14:36:02~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-09-08 14:36:02~[INFO]:~ajaxfile.php Executing Action: modsalesreceipt
+2023-09-08 14:36:02~[INFO]:~ModSalesReceipt() Started...
+2023-09-08 14:36:02~[INFO]:~ModSalesReceipt() Completed Successfully!
+2023-09-08 14:36:33~[INFO]:~ajaxfile.php Executing Action: savesalesreceipt
+2023-09-08 14:36:33~[INFO]:~ModSalesReceipt() Started...
+2023-09-08 14:36:33~[INFO]:~SaveSalesReceipt() Completed Successfully!
+2023-09-08 14:36:34~[INFO]:~ajaxfile.php Executing Action: openlogs
+2023-09-08 14:36:34~[INFO]:~ajaxfile.php Executing Action: modsalesreceipt
+2023-09-08 14:36:34~[INFO]:~ModSalesReceipt() Started...
+2023-09-08 14:36:34~[INFO]:~ModSalesReceipt() Completed Successfully!
+2023-09-08 14:59:37~[INFO]:~ajaxfile.php Executing Action: getshipping
+2023-09-08 14:59:37~[INFO]:~GetShipping() Started...
+2023-09-08 14:59:37~[INFO]:~GetShipping() Completed Successfully!
+2023-09-09 18:49:21~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-09 18:49:21~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-09 18:49:21~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-09 18:49:21~[INFO]:~Orders Completed Successfully!
+2023-09-09 18:53:28~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-09 18:53:28~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-09 18:53:28~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-09 18:53:28~[INFO]:~Orders Completed Successfully!
+2023-09-09 18:53:31~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-09 18:53:31~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-09 18:53:31~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-09 18:53:31~[INFO]:~Orders Completed Successfully!
+2023-09-09 18:54:16~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-09 18:54:16~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-09 18:54:16~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-09 18:54:16~[INFO]:~Orders Completed Successfully!
+2023-09-09 18:56:03~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-09 18:56:03~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-09 18:56:03~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-09 18:56:03~[INFO]:~Orders Completed Successfully!
+2023-09-09 18:56:43~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-09 18:56:43~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-09 18:56:43~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-09 18:56:43~[INFO]:~Orders Completed Successfully!
+2023-09-09 18:57:22~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-09 18:57:22~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-09 18:57:22~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-09 18:57:22~[INFO]:~Orders Completed Successfully!
+2023-09-09 19:02:01~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-09 19:02:01~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-09 19:02:01~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-09 19:02:01~[INFO]:~Orders Completed Successfully!
+2023-09-09 19:02:03~[INFO]:~ajaxfile.php Executing Action: homepageedit
+2023-09-09 19:02:03~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-09 19:02:29~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-09 19:02:29~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-09 19:02:29~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-09 19:02:29~[INFO]:~Orders Completed Successfully!
+2023-09-09 19:02:30~[INFO]:~ajaxfile.php Executing Action: homepageedit
+2023-09-09 19:02:30~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-10 02:13:27~[INFO]:~ajaxfile.php Executing Action: orders
+2023-09-10 02:13:27~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-10 02:13:27~[INFO]:~1 Row/s Pulled From custom_equipment_shop_orders.
+2023-09-10 02:13:27~[INFO]:~Orders Completed Successfully!
+2023-09-10 02:13:33~[INFO]:~ajaxfile.php Executing Action: homepageedit
+2023-09-10 02:13:33~[INFO]:~Pulling EQ Commerce Orders...
+2023-09-10 02:13:34~[INFO]:~ajaxfile.php Executing Action: getcategories
+2023-09-10 02:13:34~[INFO]:~GetCategories Has Started...
+2023-09-10 02:13:34~[INFO]:~GetCategories() Completed Successfully!
+2023-09-10 02:13:35~[INFO]:~ajaxfile.php Executing Action: getproducts
+2023-09-10 02:13:35~[INFO]:~GetProducts() Started...
+2023-09-10 02:13:35~[INFO]:~GetProducts() Completed Successfully!

@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ligb2q');
+  src:  url('fonts/icomoon.eot?ligb2q#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ligb2q') format('truetype'),
+    url('fonts/icomoon.woff?ligb2q') format('woff'),
+    url('fonts/icomoon.svg?ligb2q#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-AKRS-Icons-Tiles-computer-screen:before {
+  content: "\e943";
+  color: #fce021;
+}
+.icon-AKRS-MASTER_Truckicon-81:before {
+  content: "\e944";
+  color: #fce021;
+}
+.icon-AKRS-icons-01:before {
+  content: "\e93f";
+  color: #fce021;
+}
+.icon-AKRS-icon2-02:before {
+  content: "\e940";
+  color: #fce021;
+}
+.icon-AKRS-Irrigation-68:before {
+  content: "\e942";
+}
+.icon-AKRS-ASSETS-icon-CAREERS-WHY:before {
+  content: "\e941";
+}
+.icon-AKRS-Valley-Irrigation-67:before {
+  content: "\e93b";
+}
+.icon-AKRS-Careers-66:before {
+  content: "\e93c";
+}
+.icon-AKRS-Offers-65:before {
+  content: "\e93d";
+}
+.icon-AKRS-Shop-Online-64:before {
+  content: "\e93e";
+}
+.icon-AKRS-Liquid-Spreaders-42:before {
+  content: "\e901";
+}
+.icon-AKRS-Compact-Wheel-Loaders-15:before {
+  content: "\e902";
+}
+.icon-AKRS-Compact-Excavators-14:before {
+  content: "\e900";
+}
+.icon-AKRS-Compact-Track-Loaders-13:before {
+  content: "\e903";
+}
+.icon-AKRS-All-New-Equipment-63:before {
+  content: "\e904";
+}
+.icon-AKRS-Attach_Misc-Gators_UTV-62:before {
+  content: "\e905";
+}
+.icon-AKRS-Attach_Misc-Landscape-61:before {
+  content: "\e906";
+}
+.icon-AKRS-Attach_Misc-Loaders-60:before {
+  content: "\e907";
+}
+.icon-AKRS-Attach_Misc-Snow-Removal-59:before {
+  content: "\e908";
+}
+.icon-AKRS-Attach_Misc-Livestock-58:before {
+  content: "\e909";
+}
+.icon-AKRS-360-Yield-Center-57:before {
+  content: "\e90a";
+}
+.icon-AKRS-Precision-Ag-56:before {
+  content: "\e90b";
+}
+.icon-AKRS-Commercial-Application-55:before {
+  content: "\e90c";
+}
+.icon-AKRS-Seed-Trailers-54:before {
+  content: "\e90d";
+}
+.icon-AKRS-Grain-Vacuums-53:before {
+  content: "\e90e";
+}
+.icon-AKRS-Grain-Carts-52:before {
+  content: "\e90f";
+}
+.icon-AKRS-Grain-Augers-51:before {
+  content: "\e910";
+}
+.icon-AKRS-Forage-Chopper-Heads-50:before {
+  content: "\e911";
+}
+.icon-AKRS-Forage-Choppers-49:before {
+  content: "\e912";
+}
+.icon-AKRS-Forage-6:before {
+  content: "\e913";
+}
+.icon-AKRS-Forage-Mowers_Conditioners-48:before {
+  content: "\e914";
+}
+.icon-AKRS-Forage-Balers-47:before {
+  content: "\e915";
+}
+.icon-AKRS-Forage-Rakes-46:before {
+  content: "\e916";
+}
+.icon-AKRS-Seeding-Attachments-45:before {
+  content: "\e917";
+}
+.icon-AKRS-Seeding-Drills-44:before {
+  content: "\e918";
+}
+.icon-AKRS-Seeding-Planters-43:before {
+  content: "\e919";
+}
+.icon-AKRS-Box-Spreaders-41:before {
+  content: "\e91a";
+}
+.icon-AKRS-Hagie-40:before {
+  content: "\e91b";
+}
+.icon-AKRS-NH-Bars-39:before {
+  content: "\e91c";
+}
+.icon-AKRS-Cultivators-38:before {
+  content: "\e91d";
+}
+.icon-AKRS-V-Rippers-37:before {
+  content: "\e91e";
+}
+.icon-AKRS-Disks-36:before {
+  content: "\e91f";
+}
+.icon-AKRS-Combine-Heads-35:before {
+  content: "\e920";
+}
+.icon-AKRS-Gators-R-Series-33:before {
+  content: "\e921";
+}
+.icon-AKRS-Gators-M-Series-32:before {
+  content: "\e922";
+}
+.icon-AKRS-Gators-18:before {
+  content: "\e923";
+}
+.icon-AKRS-Residential-Zero-Turn-31:before {
+  content: "\e924";
+}
+.icon-AKRS-Residential-Riding-30:before {
+  content: "\e925";
+}
+.icon-AKRS-Locations-29:before {
+  content: "\e926";
+}
+.icon-AKRS-Commercial-Walk-Behind-28:before {
+  content: "\e927";
+}
+.icon-AKRS-Commercial-Front-Decks-25:before {
+  content: "\e928";
+}
+.icon-AKRS-Commercial-R-Series-27:before {
+  content: "\e929";
+}
+.icon-AKRS-Commercial-7-Iron-Decks-26:before {
+  content: "\e92a";
+}
+.icon-AKRS-Build_Price-24:before {
+  content: "\e92b";
+}
+.icon-AKRS-Service-23:before {
+  content: "\e92c";
+}
+.icon-AKRS-Parts-22:before {
+  content: "\e92d";
+}
+.icon-AKRS-Precision-Farming-21:before {
+  content: "\e92e";
+}
+.icon-AKRS-Used-Equipment-20:before {
+  content: "\e92f";
+}
+.icon-AKRS-Rotary-Cutters-19:before {
+  content: "\e930";
+}
+.icon-AKRS-Residential-Mowers-17:before {
+  content: "\e931";
+}
+.icon-AKRS-Commercial-Mowers-16:before {
+  content: "\e932";
+}
+.icon-AKRS-Skid-Steers-12:before {
+  content: "\e933";
+}
+.icon-AKRS-Attachments_Misc-08:before {
+  content: "\e934";
+}
+.icon-AKRS-Grain-Handling-07:before {
+  content: "\e935";
+}
+.icon-AKRS-Seeding-05:before {
+  content: "\e936";
+}
+.icon-AKRS-Sprayers-04:before {
+  content: "\e937";
+}
+.icon-AKRS-Tillage-03:before {
+  content: "\e938";
+}
+.icon-AKRS-Combines-02:before {
+  content: "\e939";
+}
+.icon-AKRS-Tractors-01:before {
+  content: "\e93a";
+}

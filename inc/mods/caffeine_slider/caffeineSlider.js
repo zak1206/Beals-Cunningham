@@ -1,0 +1,3 @@
+$(function(){
+    $('.caffeine-slider').slick();
+})

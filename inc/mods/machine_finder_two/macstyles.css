@@ -1,0 +1,469 @@
+.serbox{
+    border-radius: 0;
+    padding: 11px;
+    background: #efefef;
+}
+
+.searchbarhold{
+    position: relative;
+}
+
+.sericon{
+    position: absolute;
+    font-size: 27px;
+    top: 20px;
+    left: 20px;
+    color: #c1c1c1;
+}
+
+.eqtparent{
+    font-weight: bold;
+}
+
+.sortparent{
+    font-weight: bold;
+}
+
+.filt-itms{
+    background: #fff;
+    border-radius: 2px;
+    border: solid thin #d0cccc;
+    padding: 14px 10px;
+    color: #636363;
+    width: 100%;
+    text-align: left;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.filt-itms i{
+    float: right;
+    color: #d4d4d4;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.listitm{
+    display: flex;
+    padding: 20px;
+}
+
+.columnss{
+    min-width: 170%;
+}
+
+
+
+
+.catbox{
+    position: absolute;
+    max-height: 500px;
+    top:78px;
+}
+
+.manbox{
+    position: absolute;
+    max-height: 500px;
+    top:78px;
+}
+
+.morebox{
+    position: absolute;
+    max-height: 500px;
+    top:78px;
+}
+
+.locbutt{
+    margin: 3px;
+    border-radius: 2px;
+    background: #efefef
+}
+
+.locbutt-active{
+    margin: 3px;
+    background: #0d9aff;
+    color: #fff;
+}
+
+.tags button{
+    font-size:12px
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+.drogblock{
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    padding: 0px 15px;
+    background: #fff;
+}
+
+.mobsens2 {
+    padding: 0px 2px;
+}
+
+@media (max-width: 576px) {
+    .catbox{
+        position: fixed;
+        max-height: 100vh !important;
+        top: 0px;
+        left: 13px !important;
+        width: 100% !important;
+    }
+
+    .filtersets{
+        position:static !important;
+    }
+
+    .manbox{
+        position: fixed;
+        max-height: 100vh !important;
+        top: 0px;
+        left: 13px !important;
+        width: 100% !important;
+    }
+
+    .morebox{
+        position: fixed;
+        max-height: 100vh !important;
+        top: 0px;
+        left: 13px !important;
+        width: 100% !important;
+    }
+
+
+}
+
+@media (max-width: 1000px) {
+    .mobsens{
+        display: none;
+    }
+}
+
+.mobsens2{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .mobsens2{
+        display: block;
+    }
+}
+
+
+
+
+.rowsd{
+    min-width: 170%;
+}
+
+.fliterstyle{
+    border:solid thin #c1c1c1;
+    background: #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.filterbox{
+    position: absolute;
+    padding: 20px;
+    border:solid thin #c1c1c1;
+    background: #fff;
+    width: 90%;
+    top: 45px;
+    left: 30px;
+}
+
+.caret {
+    position: absolute;
+    left: 90%;
+    top: 45%;
+}
+
+.checknon{
+    color: #efefef;
+}
+
+.checknon-active{
+    color: greenyellow;
+}
+
+.filtertext{
+    max-width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    border-bottom: solid thin #efefef;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.filtertext:hover{
+    background: #f8f8f8;
+}
+
+.fliterheaders{
+    width: 100%;
+    display: block;
+    margin: 10px 0 20px;
+    background: #efefef;
+    padding: 10px;
+}
+
+.nav > li.dropdown.open {
+    position: initial
+}
+
+.nav > li.dropdown.open .dropdown-menu {
+    display: table;
+    border-radius: 0px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.dropdown-menu > li {
+    display: table-cell;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+    .dropdown-menu > li {
+        display: block;
+    }
+}
+
+.loader,
+.loader:before,
+.loader:after {
+    border-radius: 50%;
+}
+.loader,
+.loader:before,
+.loader:after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: load7 1.8s infinite ease-in-out;
+    animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+    color: #3ea1ef;
+    font-size: 10px;
+    margin: 80px auto;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+    zoom: 36%;
+    position: absolute;
+    right: 156px;
+    z-index: 5;
+    top: -40px;
+}
+.loader:before,
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+.loader:before {
+    left: -3.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+.loader:after {
+    left: 3.5em;
+}
+@-webkit-keyframes load7 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40% {
+        box-shadow: 0 2.5em 0 0;
+    }
+}
+@keyframes load7 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40% {
+        box-shadow: 0 2.5em 0 0;
+    }
+}
+
+.slider-track{
+    background: #efefef;
+    border-radius: 0;
+    height: 5px!important;
+}
+
+.slider-selection{
+    background: #29aeff;
+}
+
+.slider-handle{
+    background: #fff!important;
+    border: 3px solid #29aeff;
+    top: -8px;
+    padding: 12px;
+}
+
+.moreshow{
+    color: #fff;
+    background-color: #007bff;
+    position: sticky;
+    top: 100%;
+    left: 45%;
+    z-index: 6;
+    opacity: 0.9;
+}
+
+
+.details {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+.colors {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+
+.product-title, .price, .sizes, .colors {
+    text-transform: UPPERCASE;
+    font-weight: bold; }
+
+.checked, .price span {
+    color: #ff9f1a; }
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+    margin-bottom: 15px; }
+
+.product-title {
+    margin-top: 0;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    zoom: 40%;
+    left: 45%;
+    display: none;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #2999e1;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #2999e1 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+.mainusframe .card img{
+    width:100%
+}
+.eqtypset{
+    color:#333
+}
+.sorters{
+    color: #333;
+}
+
+.btn-group.special {
+    display: flex;
+    margin: 2px;
+}
+
+.special .btn {
+    flex: 1;
+    border-radius: 2px;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .filt-itms {
+        font-size: 15px;
+    }
+
+    .sorterset{
+        font-size: 15px;
+    }
+
+    .sorterset .fa-chevron-down{
+        display: none;
+    }
+
+    .shsowconds{
+        font-size: 15px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .filt-itms {
+        font-size: 10px;
+    }
+    .filt-itms .fa-chevron-down{
+        display: none;
+    }
+
+    .sorterset{
+        font-size: 10px;
+    }
+
+    .sorterset .fa-chevron-down{
+        display: none;
+    }
+
+    .shsowconds{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,908 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 $(function()\{\
+\
+  $(".clickobj").on('click',function()\{\
+    	///alert($(this).data('obj')+' '+ $(this).data('vals'));\
+    	var typeobj = $(this).data('obj');\
+    	var theLab = $(this).data('vals');\
+\
+    	// alert(typeobj);\
+        if($(this).find('.thecheck').length == 1)\{\
+            $(this).find('.thecheck').remove();\
+            $('[data-'+typeobj+'-set="'+theLab+'"]').remove();\
+        \}else\{\
+            $(this).append(' <span class="thecheck">\'a0<i class="fa fa-check green-check"></i></span>');\
+            $('.'+typeobj+"-labs").append('<span class="badge badge-secondary badge-lab clickobjtabs" data-labtype="'+typeobj+'" data-'+typeobj+'-set="'+theLab+'">'+theLab+' <i class="fa fa-times-circle"></i></span>');\
+            recallEvent();\
+        \}\
+\
+\
+\
+      if(typeobj == 'category')\{\
+          $('.man-item').hide();\
+          if($(this).hasClass('catfilter'))\{\
+              $(this).removeClass('catfilter');\
+          \}else\{\
+              $(this).addClass('catfilter');\
+          \}\
+\
+          var numMans = $('.catfilter').length;\
+          //alert(numMans)\
+\
+          if(parseInt(numMans) == 0)\{\
+              $('.man-item').show();\
+          \}\
+\
+\
+          $('.catfilter').each(function(i, obj) \{\
+\
+              var manus = $(this).data('manus');\
+\
+              var ars = manus.split(',');\
+\
+              $.each( ars, function( index, value )\{\
+                  $('[data-vals="'+value+'"]').show();\
+              \})\
+          \});\
+\
+      \}\
+\
+      //MANUFACTURER START//\
+\
+      if(typeobj == 'manufacturer')\{\
+          $('.cat-item').hide();\
+          if($(this).hasClass('manfilter'))\{\
+              $(this).removeClass('manfilter');\
+          \}else\{\
+              $(this).addClass('manfilter');\
+          \}\
+\
+          var numCats = $('.manfilter').length;\
+          //alert(numMans)\
+\
+          if(parseInt(numCats) == 0)\{\
+              $('.cat-item').show();\
+              // $('.man-item').show();\
+          \}\
+\
+\
+          $('.manfilter').each(function(i, obj) \{\
+\
+              var cates = $(this).data('cats');\
+\
+              var ars = cates.split(',');\
+\
+              $.each( ars, function( index, value )\{\
+                  $('[data-vals="'+value+'"]').show();\
+              \})\
+\
+              var mods = $(this).data('mods');\
+\
+              var ars2 = mods.split(',');\
+              $('.mod-item').hide();\
+              $.each( ars2, function( index, value )\{\
+                  $('[data-vals="'+value+'"]').show();\
+              \})\
+\
+          \});\
+\
+      \}\
+\
+      if(typeobj == 'city')\{\
+          if($(this).hasClass('locfilter'))\{\
+              $(this).removeClass('locfilter');\
+          \}else\{\
+              $(this).addClass('locfilter');\
+          \}\
+\
+\
+      \}\
+\
+\
+      ///MODEL START//\
+\
+      if(typeobj == 'model')\{\
+          $('.cat-item').hide();\
+          $('.man-item').hide();\
+          if($(this).hasClass('modfilter'))\{\
+              $(this).removeClass('modfilter');\
+          \}else\{\
+              $(this).addClass('modfilter');\
+          \}\
+\
+          var numMods = $('.modfilter').length;\
+          //alert(numMans)\
+\
+          if(parseInt(numMods) == 0)\{\
+              $('.mod-item').show();\
+\
+              $('.man-item').hide();\
+              $('.cat-item').show();\
+\
+              var numMans = $('.catfilter').length;\
+\
+              if(parseInt(numMans) != 0) \{\
+\
+                  $('.catfilter').each(function (i, obj) \{\
+\
+                      var manus = $(this).data('manus');\
+\
+                      var ars = manus.split(',');\
+\
+                      $.each(ars, function (index, value) \{\
+                          //console.log(value)\
+                          $('[data-vals="' + value + '"]').show();\
+                      \})\
+\
+                  \});\
+              \}else\{\
+                  $('.man-item').show();\
+              \}\
+\
+          \}else\{\
+\
+          \}\
+\
+\
+          $('.modfilter').each(function(i, obj) \{\
+\
+              var cates = $(this).data('cats');\
+\
+              var ars = cates.split(',');\
+\
+              $.each( ars, function( index, value )\{\
+                  $('[data-vals="'+value+'"]').show();\
+              \})\
+\
+              var manus = $(this).data('manus');\
+\
+              var ars2 = manus.split(',');\
+\
+              $.each( ars2, function( index, value )\{\
+                  $('[data-vals="'+value+'"]').show();\
+              \})\
+\
+\
+          \});\
+\
+\
+      \}\
+\
+\
+     ///console.log(typeobj);\
+\
+\
+      //target-box\
+      parentObj = [];\
+      $('.target-box').each(function()\{\
+\
+          var valtyp = $(this).data('filter-box');\
+\
+          jsonObj = [];\
+          $(this).children('span').each(function() \{\
+\
+              itemsz = \{\}\
+              itemsz ["item"] = $(this).data(valtyp+'-set');\
+\
+\
+\
+              jsonObj.push(itemsz);\
+          \});\
+\
+\
+          firstitem = \{\}\
+          firstitem [valtyp] = jsonObj\
+          //alert(JSON.stringify(jsonObj));\
+\
+          parentObj.push(firstitem);\
+      \})\
+\
+\
+\
+      var setfilters = JSON.stringify(parentObj);\
+      var priceFrom = $("#price_from").val();\
+      var priceTo = $("#price_to").val();\
+\
+      var hoursFrom = $("#hours_from").val();\
+      var hoursTo = $("#hours_to").val();\
+\
+      var yearFrom = $("#year_from").val();\
+      var yearTo = $("#year_to").val();\
+\
+      var getsort = $("#sorterset").val();\
+\
+      var viewType = $("#viewtype").val();\
+\
+\
+\
+          $.ajax(\{\
+          url: 'inc/mods/machine_finder/asyncfile.php?action=filter',\
+          type: "POST",\
+          cache: false,\
+          data: \{'filters': setfilters, 'price_from': priceFrom, 'price_to': priceTo, 'hours_from': hoursFrom, 'hours_to': hoursTo, 'year_from': yearFrom, 'year_to': yearTo, 'viewtype': viewType, 'sorttype': getsort\},\
+          success: function (result) \{\
+              var json = $.parseJSON(result);\
+              var models = json["models"];\
+              var years = json["years"];\
+\
+              if(typeobj != 'model') \{\
+                  var mankey = [];\
+                  $('.mod-item').each(function () \{\
+                      mankey.push($(this).data('vals'));\
+                  \})\
+                  $('.mod-item').hide();\
+                  $.each(models, function (index, value) \{\
+\
+                      var added = false;\
+                      $.map(mankey, function (elementOfArray, indexInArray) \{\
+                          if (elementOfArray == value) \{\
+                              $('[data-vals="' + value + '"]').show();\
+                              added = true;\
+                          \}\
+                      \});\
+\
+                      if (!added) \{\
+                          $('[data-vals="' + value + '"]').hide();\
+                      \}\
+\
+                  \});\
+              \}\
+\
+              ///YEAR///\
+\
+              var yearkey = [];\
+              $('.year-item').each(function () \{\
+                  yearkey.push($(this).data('vals'));\
+              \})\
+              $('.year-item').hide();\
+              $.each(years, function (index, value) \{\
+\
+                  var added = false;\
+                  $.map(yearkey, function (elementOfArray, indexInArray) \{\
+                      if (elementOfArray == value) \{\
+                          $('[data-vals="' + value + '"]').show();\
+                          added = true;\
+                      \}\
+                  \});\
+\
+                  if (!added) \{\
+                      $('[data-vals="' + value + '"]').hide();\
+                  \}\
+\
+              \});\
+          \}\
+      \});\
+\
+\
+\
+          ///SHOW RESULTS//\
+\
+      $.ajax(\{\
+          url: 'inc/mods/machine_finder/asyncfile.php?action=getresults&page=1',\
+          cache: false,\
+          type: "POST",\
+          data: \{'filters': setfilters, 'price_from': priceFrom, 'price_to': priceTo, 'hours_from': hoursFrom, 'hours_to': hoursTo, 'year_from': yearFrom, 'year_to': yearTo, 'viewtype': viewType, 'sorttype': getsort\},\
+          success: function (result) \{\
+              $('.rezout').html(result);\
+              getSortobj();\
+          \}\
+      \});\
+\
+\
+\
+  \})\
+\})\
+\
+\
+///PAGE THROUGH DATA///\
+\
+function pageData(page)\{\
+\
+    parentObj = [];\
+    $('.target-box').each(function()\{\
+\
+        var valtyp = $(this).data('filter-box');\
+\
+        jsonObj = [];\
+        $(this).children('span').each(function() \{\
+\
+            itemsz = \{\}\
+            itemsz ["item"] = $(this).data(valtyp+'-set');\
+\
+            jsonObj.push(itemsz);\
+        \});\
+\
+        firstitem = \{\}\
+        firstitem [valtyp] = jsonObj\
+        //alert(JSON.stringify(jsonObj));\
+\
+        parentObj.push(firstitem);\
+    \})\
+\
+    var setfilters = JSON.stringify(parentObj);\
+\
+    var priceFrom = $("#price_from").val();\
+    var priceTo = $("#price_to").val();\
+\
+    var hoursFrom = $("#hours_from").val();\
+    var hoursTo = $("#hours_to").val();\
+\
+    var yearFrom = $("#year_from").val();\
+    var yearTo = $("#year_to").val();\
+\
+    var getsort = $("#sorterset").val();\
+\
+    var viewType = $("#viewtype").val();\
+\
+    $.ajax(\{\
+        url: 'inc/mods/machine_finder/asyncfile.php?action=getresults&page='+page,\
+        cache: false,\
+        type: "POST",\
+        data: \{'filters': setfilters, 'price_from': priceFrom, 'price_to': priceTo, 'hours_from': hoursFrom, 'hours_to': hoursTo, 'year_from': yearFrom, 'year_to': yearTo, 'viewtype': viewType, 'sorttype': getsort\},\
+        success: function (result) \{\
+            $('.rezout').html(result);\
+            $(window).scrollTop(0);\
+            getSortobj();\
+        \}\
+    \});\
+\}\
+\
+\
+function recallEvent()\{\
+    $(".clickobjtabs").on('click',function()\{\
+        var objtype = $(this).data('labtype');\
+\
+        var theobj = $(this).data(objtype+'-set');\
+\
+        $('[data-'+objtype+'-set="'+theobj+'"]').remove();\
+        $('[data-vals="'+theobj+'"]').find('.thecheck').remove();\
+\
+\
+\
+        var typeobj = objtype;\
+        var theLab = theobj;\
+\
+\
+\
+\
+        if(typeobj == 'category')\{\
+            $('.man-item').hide();\
+            $('[data-vals="'+theobj+'"]').removeClass('catfilter');\
+\
+            var numMans = $('.catfilter').length;\
+           // alert(numMans)\
+\
+            if(parseInt(numMans) == 0)\{\
+                $('.man-item').show();\
+                $('.mod-item').show();\
+            \}\
+\
+\
+\
+\
+            $('.catfilter').each(function(i, obj) \{\
+\
+                var manus = $(this).data('manus');\
+\
+                var ars = manus.split(',');\
+\
+                $.each( ars, function( index, value )\{\
+                    $('[data-vals="'+value+'"]').show();\
+                \})\
+\
+\
+\
+\
+            \});\
+\
+\
+        \}\
+\
+        //MANUFACTURER START//\
+\
+        if(typeobj == 'manufacturer')\{\
+            $('.cat-item').hide();\
+            $('[data-vals="'+theobj+'"]').removeClass('manfilter');\
+\
+            var numCats = $('.manfilter').length;\
+            //alert(numMans)\
+\
+            if(parseInt(numCats) == 0)\{\
+                $('.cat-item').show();\
+                $('.man-item').show();\
+                // $('.man-item').show();\
+            \}\
+\
+\
+            $('.manfilter').each(function(i, obj) \{\
+\
+                var cates = $(this).data('cats');\
+\
+                var ars = cates.split(',');\
+\
+                $.each( ars, function( index, value )\{\
+                    $('[data-vals="'+value+'"]').show();\
+                \})\
+\
+                var mods = $(this).data('mods');\
+                $('.mod-item').show();\
+\
+                var ars2 = mods.split(',');\
+                $('.mod-item').hide();\
+                $.each( ars2, function( index, value )\{\
+                    $('[data-vals="'+value+'"]').show();\
+                \})\
+\
+            \});\
+\
+\
+        \}\
+\
+\
+        ///MODEL START//\
+\
+        if(typeobj == 'model')\{\
+            $('.cat-item').hide();\
+            $('.man-item').hide();\
+            $('[data-vals="'+theobj+'"]').removeClass('modfilter');\
+\
+            var numMods = $('.modfilter').length;\
+            //alert(numMans)\
+\
+            if(parseInt(numMods) == 0)\{\
+                $('.mod-item').show();\
+\
+                $('.man-item').hide();\
+                $('.cat-item').show();\
+\
+                var numMans = $('.catfilter').length;\
+\
+                if(parseInt(numMans) != 0) \{\
+\
+                    $('.catfilter').each(function (i, obj) \{\
+\
+                        var manus = $(this).data('manus');\
+\
+                        var ars = manus.split(',');\
+\
+                        $.each(ars, function (index, value) \{\
+                            //console.log(value)\
+                            $('[data-vals="' + value + '"]').show();\
+                        \})\
+\
+                    \});\
+                \}else\{\
+                    $('.man-item').show();\
+                \}\
+\
+            \}else\{\
+\
+            \}\
+\
+\
+            $('.modfilter').each(function(i, obj) \{\
+\
+                var cates = $(this).data('cats');\
+\
+                var ars = cates.split(',');\
+\
+                $.each( ars, function( index, value )\{\
+                    $('[data-vals="'+value+'"]').show();\
+                \})\
+\
+                var manus = $(this).data('manus');\
+\
+                var ars2 = manus.split(',');\
+\
+                $.each( ars2, function( index, value )\{\
+                    $('[data-vals="'+value+'"]').show();\
+                \})\
+\
+\
+            \});\
+\
+\
+        \}\
+\
+\
+        //console.log(typeobj);\
+\
+\
+        //target-box\
+        parentObj = [];\
+        $('.target-box').each(function()\{\
+\
+            var valtyp = $(this).data('filter-box');\
+\
+            jsonObj = [];\
+            $(this).children('span').each(function() \{\
+\
+                itemsz = \{\}\
+                itemsz ["item"] = $(this).data(valtyp+'-set');\
+\
+                jsonObj.push(itemsz);\
+            \});\
+\
+            firstitem = \{\}\
+            firstitem [valtyp] = jsonObj\
+            //alert(JSON.stringify(jsonObj));\
+\
+            parentObj.push(firstitem);\
+        \})\
+\
+        var setfilters = JSON.stringify(parentObj);\
+\
+\
+        //GET PRICE INFO//\
+        var priceFrom = $("#price_from").val();\
+        var priceTo = $("#price_to").val();\
+\
+        var hoursFrom = $("#hours_from").val();\
+        var hoursTo = $("#hours_to").val();\
+\
+        var yearFrom = $("#year_from").val();\
+        var yearTo = $("#year_to").val();\
+\
+\
+\
+\
+        $.ajax(\{\
+            url: 'inc/mods/machine_finder/asyncfile.php?action=filter',\
+            cache: false,\
+            type: "POST",\
+            data: \{'filters': setfilters\},\
+            success: function (result) \{\
+                var json = $.parseJSON(result);\
+                var models = json["models"];\
+                var years = json["years"];\
+\
+                if(typeobj != 'model') \{\
+                    var mankey = [];\
+                    $('.mod-item').each(function () \{\
+                        mankey.push($(this).data('vals'));\
+                    \})\
+                    $('.mod-item').hide();\
+                    $.each(models, function (index, value) \{\
+\
+                        var added = false;\
+                        $.map(mankey, function (elementOfArray, indexInArray) \{\
+                            if (elementOfArray == value) \{\
+                                $('[data-vals="' + value + '"]').show();\
+                                added = true;\
+                            \}\
+                        \});\
+\
+                        if (!added) \{\
+                            $('[data-vals="' + value + '"]').hide();\
+                        \}\
+\
+                    \});\
+                \}\
+\
+                ///YEAR///\
+\
+                var yearkey = [];\
+                $('.year-item').each(function () \{\
+                    yearkey.push($(this).data('vals'));\
+                \})\
+                $('.year-item').hide();\
+                $.each(years, function (index, value) \{\
+\
+                    var added = false;\
+                    $.map(yearkey, function (elementOfArray, indexInArray) \{\
+                        if (elementOfArray == value) \{\
+                            $('[data-vals="' + value + '"]').show();\
+                            added = true;\
+                        \}\
+                    \});\
+\
+                    if (!added) \{\
+                        $('[data-vals="' + value + '"]').hide();\
+                    \}\
+\
+                \});\
+            \}\
+        \});\
+\
+        ///SHOW RESULTS//\
+\
+        var getsort = $("#sorterset").val();\
+\
+        $.ajax(\{\
+            url: 'inc/mods/machine_finder/asyncfile.php?action=getresults',\
+            cache: false,\
+            type: "POST",\
+            data: \{'filters': setfilters, 'price_from': priceFrom, 'price_to': priceTo, 'hours_from': hoursFrom, 'hours_to': hoursTo, 'year_from': yearFrom, 'year_to': yearTo, 'sorttype': getsort\},\
+            success: function (result) \{\
+                $('.rezout').html(result);\
+                getSortobj();\
+\
+            \}\
+        \});\
+\
+\
+\
+    \})\
+\}\
+\
+//SEARCH//\
+\
+\
+$.fn.donetyping = function(callback)\{\
+    var _this = $(this);\
+    var x_timer;\
+    _this.keyup(function ()\{\
+        clearTimeout(x_timer);\
+        x_timer = setTimeout(clear_timer, 1000);\
+    \});\
+\
+    function clear_timer()\{\
+        clearTimeout(x_timer);\
+        callback.call(_this);\
+    \}\
+\}\
+\
+$('.theautos').donetyping(function(callback)\{\
+    var input = $(this).val();\
+    $.ajax(\{\
+        url: 'inc/mods/machine_finder/asyncfile.php?action=inputsearch',\
+        cache: false,\
+        type: "POST",\
+        data: \{'searchinput': input\},\
+        success: function (result) \{\
+            $('.rezout').html(result);\
+            getSortobj();\
+\
+        \}\
+    \});\
+\});\
+\
+$(function()\{\
+    $(".js-range-slider").ionRangeSlider(\{\
+        skin: "round",\
+        onFinish: function (data) \{\
+            // Called then action is done and mouse is released\
+            $("#price_from").val(data.from);\
+            $("#price_to").val(data.to)\
+            pageData(1)\
+        \},\
+    \});\
+\
+    $(".js-range-slider-2").ionRangeSlider(\{\
+        skin: "round",\
+        onFinish: function (data) \{\
+            // Called then action is done and mouse is released\
+            $("#hours_from").val(data.from);\
+            $("#hours_to").val(data.to)\
+            pageData(1)\
+        \},\
+    \});\
+\
+    $(".js-range-slider-3").ionRangeSlider(\{\
+        skin: "round",\
+        prettify_enabled: false,\
+        onFinish: function (data) \{\
+            // Called then action is done and mouse is released\
+            $("#year_from").val(data.from);\
+            $("#year_to").val(data.to)\
+            pageData(1)\
+        \},\
+    \});\
+\
+\})\
+\
+function resetFilters()\{\
+  $("#searchinput").val('');\
+    $(".clickobjtabs").remove();\
+    $(".thecheck").remove();\
+    $(".cat-item").show();\
+\
+    $('.cat-item').each(function()\{\
+        $(this).removeClass('catfilter');\
+    \})\
+\
+    $(".man-item").each(function()\{\
+        $(this).removeClass('manfilter');\
+    \})\
+\
+    $('.mod-item').each(function()\{\
+        $(this).removeClass('modfilter');\
+    \})\
+\
+    $(".man-item").show();\
+    $(".mod-item").show();\
+    $(".year-item").show();\
+    let my_range = $(".js-range-slider").data("ionRangeSlider");\
+    my_range.update(\{\
+        from: 0,\
+        to: 900000\
+    \});\
+\
+    let my_range_2 = $(".js-range-slider-2").data("ionRangeSlider");\
+    my_range_2.update(\{\
+        from: 0,\
+        to: 9000\
+    \});\
+\
+    let my_range_3 = $(".js-range-slider-3").data("ionRangeSlider");\
+    my_range_3.update(\{\
+        from: 1900,\
+        to: new Date().getFullYear()\
+    \});\
+\
+    $("#price_from").val('0');\
+    $("#price_to").val('900000')\
+\
+    $("#hours_from").val('0');\
+    $("#hours_to").val('9000')\
+\
+    $("#year_from").val('1900');\
+    $("#year_to").val(new Date().getFullYear())\
+\
+    $("#sorterset").val('');\
+    $(".show-sort").text('Sort');\
+\
+    pageData(1);\
+\}\
+\
+function getSortobj()\{\
+    $(".sorters").on('click',function()\{\
+        var sorttype = $(this).data('dorttype');\
+        var readable = $(this).text();\
+\
+       //alert(sorttype);\
+        //$(".show-sort").html(readable);\
+        $("#sorterset").val(sorttype);\
+\
+        pageData(1)\
+    \})\
+\}\
+\
+function setViewType(vwtype)\{\
+    $("#viewtype").val(vwtype);\
+    pageData(1);\
+\}\
+\
+function rerunFiltration()\{\
+    //target-box\
+    parentObj = [];\
+    $('.target-box').each(function()\{\
+\
+        var valtyp = $(this).data('filter-box');\
+\
+        jsonObj = [];\
+        $(this).children('span').each(function() \{\
+\
+            itemsz = \{\}\
+            itemsz ["item"] = $(this).data(valtyp+'-set');\
+\
+            jsonObj.push(itemsz);\
+        \});\
+\
+        firstitem = \{\}\
+        firstitem [valtyp] = jsonObj\
+        //alert(JSON.stringify(jsonObj));\
+\
+        parentObj.push(firstitem);\
+    \})\
+\
+    var setfilters = JSON.stringify(parentObj);\
+\
+\
+    //GET PRICE INFO//\
+    var priceFrom = $("#price_from").val();\
+    var priceTo = $("#price_to").val();\
+\
+    var hoursFrom = $("#hours_from").val();\
+    var hoursTo = $("#hours_to").val();\
+\
+    var yearFrom = $("#year_from").val();\
+    var yearTo = $("#year_to").val();\
+\
+\
+\
+\
+    $.ajax(\{\
+        url: 'inc/mods/machine_finder/asyncfile.php?action=filter',\
+        cache: false,\
+        type: "POST",\
+        data: \{'filters': setfilters\},\
+        success: function (result) \{\
+            var json = $.parseJSON(result);\
+            var models = json["models"];\
+            var years = json["years"];\
+\
+\
+/////HEREHRE/////\
+\
+            $('.man-item').hide();\
+\
+            $('.catfilter').each(function(i, obj) \{\
+\
+                var manus = $(this).data('manus');\
+\
+                var ars = manus.split(',');\
+\
+                $.each( ars, function( index, value )\{\
+                    $('[data-vals="'+value+'"]').show();\
+                \})\
+            \});\
+\
+\
+\
+                var mankey = [];\
+                $('.mod-item').each(function () \{\
+                    mankey.push($(this).data('vals'));\
+                \})\
+                $('.mod-item').hide();\
+                $.each(models, function (index, value) \{\
+\
+                    var added = false;\
+                    $.map(mankey, function (elementOfArray, indexInArray) \{\
+                        if (elementOfArray == value) \{\
+                            $('[data-vals="' + value + '"]').show();\
+                            added = true;\
+                        \}\
+                    \});\
+\
+                    if (!added) \{\
+                        $('[data-vals="' + value + '"]').hide();\
+                    \}\
+\
+                \});\
+\
+            ///YEAR///\
+\
+            var yearkey = [];\
+            $('.year-item').each(function () \{\
+                yearkey.push($(this).data('vals'));\
+            \})\
+            $('.year-item').hide();\
+            $.each(years, function (index, value) \{\
+\
+                var added = false;\
+                $.map(yearkey, function (elementOfArray, indexInArray) \{\
+                    if (elementOfArray == value) \{\
+                        $('[data-vals="' + value + '"]').show();\
+                        added = true;\
+                    \}\
+                \});\
+\
+                if (!added) \{\
+                    $('[data-vals="' + value + '"]').hide();\
+                \}\
+\
+            \});\
+        \}\
+    \});\
+\}\
+\
+$(function()\{\
+    rerunFiltration();\
+    var curpage = $("#pageons").val();\
+\
+    if(curpage == 'undefined')\{\
+        var thepage = '1';\
+    \}else\{\
+        var thepage = curpage;\
+    \}\
+\
+    pageData(thepage);\
+\
+    $(".opnfilters").on('click',function()\{\
+\
+        $(".mob-sensor").toggle();\
+        $("html, body").animate(\{ scrollTop: 0 \}, 0);\
+        if($('.mob-sensor').is(":visible"))\{\
+            $(".opnfilters").text('Close Filters');\
+        \}else\{\
+            $(".opnfilters").text('Open Filters');\
+        \}\
+    \})\
+\})}
