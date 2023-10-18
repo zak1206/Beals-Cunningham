@@ -8,6 +8,46 @@ class ShipEngineHandler implements ShippingInterface
 
     /**
      * 
+     * Grabs The Carrier ID - Using The LTL Freight Shipping API Call
+     * 
+     * 
+     * @return returns String Value Containing Carrier ID Code
+     */
+    public function GetLTLCarrierCodes(): string
+    {
+        $api_key = $this->Get_API_Key();
+
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => 'https://api.shipengine.com/v-beta/ltl/connections',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => '{
+          "credentials": {}
+        }',
+            CURLOPT_HTTPHEADER => array(
+                'Host: api.shipengine.com',
+                'API-Key: ' . $api_key,
+                'Content-Type: application/json'
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        echo var_dump(($response));
+        $response = json_decode($response, true);
+
+        curl_close($curl);
+        return strval($response['carrier_id']);
+    }
+
+    /**
+     * 
      * Grabs The Carrier ID - Using The Sanbox Testing LTL Freight Shipping Test API Call
      * 
      * [FOR DEMO PURPOSES]
