@@ -1102,7 +1102,7 @@ class ShipEngineHandler implements ShippingInterface
         array_push($newCartData, $newCartItems);
         $newCartDataJSON = json_encode($newCartData, true);
         //setcookie('cartData', $newCartDataJSON, 0, '/');
-        echo var_dump($shipments_array);
+        //echo var_dump($shipments_array);
 
         //Calculate Total Shipping From Total Weight
         if (floatval($totalWeight) > floatval($shipment_weight_limit)) {

@@ -33,7 +33,7 @@ $currentTimestamp = $dateTime->getTimestamp();
 $service_code = "stdn"; //$_COOKIE['shippingData']['service_code'];
 $shipping_charges = $engine->EstimateCartShippingCharges("Zak Rowton", $street1, $street2, $city, $state, $zip, $phone, $email, $service_code, true);
 $labels = $engine->CreateCartShippingLabels("Zak Rowton", $street1, $street2, $city, $state, $zip, $phone, $email);
-echo var_dump($labels);
+//echo var_dump($labels);
 
 //Shipping Labels
 $label_urls = array();
