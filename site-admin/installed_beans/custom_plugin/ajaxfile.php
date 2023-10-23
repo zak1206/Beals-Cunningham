@@ -273,7 +273,7 @@ if ($act == 'pullorder') {
 
 
 
-            $cart = stripcslashes(trim($b["items_list"], '"'));
+            $cart = $b["items_list"];
             $purchasedItems = json_decode($cart, true);
 
 
@@ -281,7 +281,7 @@ if ($act == 'pullorder') {
 
 
             $totalPrice = 0;
-            for ($i = 0; $i < count($cartItems); $i++) {
+            for ($i = 0; $i < count($$purchasedItems); $i++) {
 
                 $prodId = $cartItems[$i]["id"];
                 $prodName = str_replace('_', ' ', $cartItems[$i]["name"]);
