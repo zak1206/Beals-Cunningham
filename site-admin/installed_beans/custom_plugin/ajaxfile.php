@@ -275,39 +275,21 @@ if ($act == 'pullorder') {
 
             $cart = $b["items_list"];
             $purchasedItems = json_decode($cart, true);
-
-
-            $cartItems = $purchasedItems["cartitems"];
-
-
             $totalPrice = 0;
-            for ($i = 0; $i < count($$purchasedItems); $i++) {
+            for ($i = 0; $i < count($purchasedItems); $i++) {
 
-                $prodId = $cartItems[$i]["id"];
-                $prodName = str_replace('_', ' ', $cartItems[$i]["name"]);
-                $prodQty = $cartItems[$i]["qty"];
-                $prodPrice = number_format($cartItems[$i]["price"], 2);
+                $prodId = $purchasedItems[$i]["id"];
+                $prodName = str_replace('-', ' ', str_replace('_', ' ', $purchasedItems[$i]["name"]));
+                $prodQty = intval($purchasedItems[$i]["qty"]);
+                $prodPrice = number_format(floatval($purchasedItems[$i]["price"]), 2, '.', ',');
 
-                $prodTotal = number_format($prodPrice * $prodQty, 2);
-
-                //GET PRODUCT INFO//
-                $d = $data->query("SELECT * FROM custom_equipment WHERE id = '$prodId'");
-                $e = $d->fetch_array();
-                $logger->log("Pulled " . $d->num_rows . " Orders From custom_equipment DataTable.", "INFO");
-
-                if (strlen($e["description"]) > 120) {
-                    $prodDescript = substr($e["description"], 0, 120) . '....';
-                } else {
-                    $prodDescript = $e["description"];
-                }
+                $prodTotal = number_format((floatval($prodPrice) * intval($prodQty)), 2, '.', ',');
 
 
                 $html .= '<tr>
-                                <td>
-                                    <h6 class="mb-0">' . $prodName . '</h6> <span class="text-muted">' . $prodDescript . '</span>
-                                </td>
-                                <td>' . $prodQty . '</td>
-                                <td>' . $prodPrice . '</td>
+                                <td>' . $prodName . '</td>
+                                <td>' . $purchasedItems[$i]["qty"] . '</td>
+                                <td>' . $purchasedItems[$i]["price"] . '</td>
                                 <td><span class="font-weight-semibold">$' . $prodTotal . '</span></td>
                             </tr>';
                 $totalPrice += $prodTotal;
@@ -323,7 +305,7 @@ if ($act == 'pullorder') {
                 <table>
                     <tr>
                         <td style="width: 60%">
-                        <div class="row justify-content-center mb-2 mt-5">
+                        <div class="row justify-content-center mb-2 mt-1">
                             <h4 class="col-md-12 text-center"><b>Shipping Labels</b></h4>
                                 <select class="form-control mr-3 col-md-6" placeholder="Select Shipping Label">';
             foreach ($labelsJson['labels'] as $label) {
@@ -343,14 +325,14 @@ if ($act == 'pullorder') {
                                     <tbody>
                                         <tr>
                                             <th class="text-left">Subtotal:</th>
-                                            <td class="text-right">$' . number_format($totalPrice, 2) . '</td>
+                                            <td class="text-right">$' . number_format($totalPrice, 2, '.', ',') . '</td>
                                         </tr>';
 
             if ($b["discount_applied"] != null) {
 
                 $html .= '<tr>
                                                                             <th class="text-left">Applied Discount:</th>
-                                                                            <td class="text-right">-$' . number_format($b["discount_applied"], 2) . '</td>
+                                                                            <td class="text-right">-$' . number_format($b["discount_applied"], 2, '.', ',') . '</td>
                                                                         </tr>';
             }
 
@@ -358,7 +340,7 @@ if ($act == 'pullorder') {
 
                 $html .= '<tr>
                                             <th class="text-left">Tax:</th>
-                                            <td class="text-right">$' . number_format($b["applied_tax"], 2) . '</td>
+                                            <td class="text-right">$' . number_format($b["applied_tax"], 2, '.', ',') . '</td>
                                         </tr>';
             }
 
@@ -372,7 +354,7 @@ if ($act == 'pullorder') {
             $html .= '<tr>
                                             <th class="text-left">Total:</th>
                                             <td class="text-right text-primary">
-                                                <h5 class="font-weight-semibold">$' . number_format($b["purchase_price"], 2) . '</h5>
+                                                <h5 class="font-weight-semibold">$' . number_format($b["purchase_price"], 2, '.', ',') . '</h5>
                                             </td>
                                         </tr>
                                     </tbody>
