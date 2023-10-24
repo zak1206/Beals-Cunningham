@@ -45,7 +45,7 @@ class EStore_Settings_Two
         $a = $data->query($query);
         $b = $a->fetch_array();
         return intval($b['create_shipping_labels']);
-    }
+    } 
 
     public function AutoGenerateLabels(): int
     {
