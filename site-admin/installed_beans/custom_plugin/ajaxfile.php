@@ -235,9 +235,9 @@ if ($act == 'pullorder') {
                                     <li>' . $b["ship_address"] . '</li>
                                     <li>' . $b["ship_city"] . ' ' . $b["ship_state"] . ', ' . $b["ship_zip"] . '</li>';
 
-                if ($b["ship_tracking"] != 'none') {
+                if ($b["ship_type"] == 'api_system') {
                     $html .= '<li><span class="font-weight-semibold">' . $b["ship_type"] . '</span></li>
-                                    <li><span class="font-weight-semibold">Tracking: <a href="https://www.google.com/search?q=1ZY2572W0399703713" target="_blank"> ' . $b["ship_tracking"] . '</a></span></li>';
+                            <li><span class="font-weight-semibold mt-2"><b>Tracking:</b> <a href="https://www.google.com/search?q=1ZY2572W0399703713" target="_blank"> ' . $b["tracking_number"] . '</a></span></li>';
                 } else {
                     $html .= '<li><span class="font-weight-semibold">' . $b["ship_type"] . '</span></li>';
                 }
@@ -280,19 +280,15 @@ if ($act == 'pullorder') {
 
                 $prodId = $purchasedItems[$i]["id"];
                 $prodName = str_replace('-', ' ', str_replace('_', ' ', $purchasedItems[$i]["name"]));
-                $prodQty = intval($purchasedItems[$i]["qty"]);
-                $prodPrice = number_format(floatval($purchasedItems[$i]["price"]), 2, '.', ',');
-
-                $prodTotal = number_format((floatval($prodPrice) * intval($prodQty)), 2, '.', ',');
-
 
                 $html .= '<tr>
                                 <td>' . $prodName . '</td>
                                 <td>' . $purchasedItems[$i]["qty"] . '</td>
                                 <td>' . $purchasedItems[$i]["price"] . '</td>
-                                <td><span class="font-weight-semibold">$' . $prodTotal . '</span></td>
+                                <td><span class="font-weight-semibold">$' . number_format((intval($purchasedItems[$i]['qty']) * floatval($purchasedItems[$i]['price'])), 2, '.', ',') . '</span></td>
                             </tr>';
-                $totalPrice += $prodTotal;
+
+                $totalPrice += (intval($purchasedItems[$i]['qty']) * floatval($purchasedItems[$i]['price']));
             }
 
             //Shipping Labels
@@ -307,14 +303,33 @@ if ($act == 'pullorder') {
                         <td style="width: 60%">
                         <div class="row justify-content-center mb-2 mt-1">
                             <h4 class="col-md-12 text-center"><b>Shipping Labels</b></h4>
-                                <select class="form-control mr-3 col-md-6" placeholder="Select Shipping Label">';
-            foreach ($labelsJson['labels'] as $label) {
+                                <select class="form-control mr-3 col-md-6 shipping_label_select" onclick="SetLabelURL()" placeholder="Select Shipping Label">';
+            foreach ($labelsJson['labels'][0] as $label) {
                 $html .= '<option value="' . $label['label_url'] . '">' . str_replace('.pdf', '', str_replace('../../../shipping_labels/', '', $label['label_url'])) . '</option>';
             }
+
+            //------ PRICE TOTALS
+            $sub_total = number_format(doubleval($totalPrice), 2, '.', ',');
+            $shipping_cost = number_format(floatval($b["ship_cost"]), 2, '.', ',');
+            $applied_tax = number_format(floatval($b["applied_tax"]), 2, '.', ',');
+            $total_cost = number_format((doubleval($shipping_cost) + doubleval($applied_tax) + doubleval($totalPrice)), 2, '.', ',');
+
             $html .= '</select>
-                                <button type="button" class="col-md-3 btn btn-primary"><b><i class="fa fa-paper-plane-o mr-1"></i></b> Print Shipping Label</button>
-                                </div>
-                            <iframe src="../../../' . $labelsJson['labels'][0]['label_url'] . '" width="100%" height="800"></iframe>
+                                <a class="ship_url" href="" target="_blank"><button type="button" style="min-width: 210px;" class="col-md-3 btn btn-primary print_label">
+                                    <b>
+                                        <i class="fa fa-paper-plane-o mr-1"></i>
+                                    </b> 
+                                    Print Shipping Label
+                                </button></a>
+                                <script>
+                                    function SetLabelURL(){
+                                        var url = $(".shipping_label_select").val();
+                                        console.log("URL: " + url);
+                                        $(".ship_url").attr("href", "https://rowtonengineering.com/stellar/" + url);
+                                        console.log("URL SET!");
+                                    }
+                                </script>
+                            </div>
                         </td>
                         <td><div class="card-body">
                     <div class="d-md-flex flex-md-wrap">
@@ -325,7 +340,7 @@ if ($act == 'pullorder') {
                                     <tbody>
                                         <tr>
                                             <th class="text-left">Subtotal:</th>
-                                            <td class="text-right">$' . number_format($totalPrice, 2, '.', ',') . '</td>
+                                            <td class="text-right">$' . $sub_total . '</td>
                                         </tr>';
 
             if ($b["discount_applied"] != null) {
@@ -340,21 +355,21 @@ if ($act == 'pullorder') {
 
                 $html .= '<tr>
                                             <th class="text-left">Tax:</th>
-                                            <td class="text-right">$' . number_format($b["applied_tax"], 2, '.', ',') . '</td>
+                                            <td class="text-right">$' . $applied_tax . '</td>
                                         </tr>';
             }
 
             if ($b["ship_price"] != '0.00') {
                 $html .= '<tr>
                                             <th class="text-left">Shipping:</th>
-                                            <td class="text-right">$' . $b["ship_price"] . '</td>
+                                            <td class="text-right">$' . $shipping_cost . '</td>
                                         </tr>';
             }
 
             $html .= '<tr>
                                             <th class="text-left">Total:</th>
                                             <td class="text-right text-primary">
-                                                <h5 class="font-weight-semibold">$' . number_format($b["purchase_price"], 2, '.', ',') . '</h5>
+                                                <h5 class="font-weight-semibold">$' . $total_cost . '</h5>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -366,7 +381,6 @@ if ($act == 'pullorder') {
                 </div></td>
                     </tr>
                 </table>
-                
                 <!--<div class="card-footer"> <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit</span> </div>-->
             </div>
         </div>
@@ -2258,21 +2272,31 @@ if ($act == 'coupon_settings') {
 //GET SHOP SETTINGS//
 if ($act == 'store_settings') {
     try {
-        include('settings/settings.php');
-        $settings = new ShopSettings();
         $logger->log("Store_Settings() Started...", "INFO");
+        include('settings/settings.php');
+        $settingss = new EStore_Settings_Two();
+        $shop_loc = $settingss->GetDefaultShopLocation();
+        $do_tax_stuff = $settingss->GetDoTaxStuff() == 1 ? 'true' : 'false';
 
-        $html .= '<div class="theresults"></div>';
+        $html = '<div class="theresults"></div>';
         $html .= '<div class="row"><div class="col-md-6"><h2 style="border-bottom: solid thin #efefef; max-width: 50%">E-STORE SETTINGS</h2></div><div class="col-md-6" style="text-align: right"></div></div><br>';
         $html .= '<table id="example" class="table table-striped">';
         $html .= '<thead>';
         $html .= '<tr>';
         $html .= '<th>Setting Name</th>';
-        $html .= '<th style="text-align: right">Change</th>';
+        $html .= '<th>Setting Value</th>';
         $html .= '</tr>';
         $html .= '</thead>';
 
-        $html .= '<tr><td>1</td><td></tr>';
+        $html .= '<tr>
+                    <td>Default Store Location</td>
+                    <td>' . ($shop_loc) . '</td>
+                </tr>';
+
+        $html .= '<tr>
+                    <td>Do Tax Calculations</td>
+                    <td>' . ($do_tax_stuff) . '</td>
+                </tr>';
 
         $html .= '</table>';
 

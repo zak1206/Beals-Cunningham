@@ -18,7 +18,7 @@ class EStore_Settings
 
     public function __construct()
     {
-        $this->RefreshSettings();
+        //$this->RefreshSettings();
     }
 
     public function RefreshSettings(): bool

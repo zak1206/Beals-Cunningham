@@ -514,7 +514,6 @@ class ShipEngineHandler implements ShippingInterface
                         'quote_json' => $quote_data
                     );
                     array_push($response_array['shipments'], $shipment_array);
-                    break; // We found the total charge, so break out of the loop
                 }
             }
 
@@ -524,6 +523,7 @@ class ShipEngineHandler implements ShippingInterface
 
         $response_array['total'] = doubleval($total);
         $response_json = json_encode($response_array, true);
+        //echo var_dump($response_json);
 
         return $response_json;
     }
@@ -678,14 +678,13 @@ class ShipEngineHandler implements ShippingInterface
                 $img = $doc['image'];
                 $path = '../../../../shipping_labels/' . $response['shipment_id'] . '.pdf';
                 $this->convertBase64ToPDF($img, $path);
+                array_push($labels, array('label_url' => str_replace('../../../../', '', $path)));
             }
 
             curl_close($curl);
         }
 
-        $output = array('label_url' => str_replace('../../../../', '', $path));
-
-        return $output;
+        return $labels;
     }
 
     public function CreateDemoShippingLabel($toName, $toAddr, $toAddr2, $toCity, $toState, $toZip, $phone, $email, $shipments): string
@@ -1102,7 +1101,7 @@ class ShipEngineHandler implements ShippingInterface
         array_push($newCartData, $newCartItems);
         $newCartDataJSON = json_encode($newCartData, true);
         //setcookie('cartData', $newCartDataJSON, 0, '/');
-        //echo var_dump($shipments_array);
+        // echo var_dump($shipments_array);
 
         //Calculate Total Shipping From Total Weight
         if (floatval($totalWeight) > floatval($shipment_weight_limit)) {
@@ -1112,28 +1111,22 @@ class ShipEngineHandler implements ShippingInterface
                 $quote_amount = json_decode($quote_amount, true);
                 $quote_id = '';
                 foreach ($quote_amount['shipments'] as $quote) {
-                    $shippingDataJSON = json_decode($_COOKIE['shippingData'], true);
-                    $newShippingData = array(
-                        'service_code' => $shippingDataJSON[0]['service_code'],
-                        'carrier_id' => $shippingDataJSON[0]['carrier_id'],
-                        'quote_id' => array(
-                            'carrier_quote_id' => $quote['carrier_quote_id']
-                        )
-                    );
-                    setcookie('shippingData', json_encode($newShippingData, true), 0, '/');
+                    echo ("COST: " + $quote['cost'] + "\n");
+                    $shipping_total += floatval($quote['cost']);
                 }
-                $shipping_total = floatval($shipping_total) + floatval($quote_amount['total']);
             } else {
+                echo "NOT DEMO!";
                 $quote_amount = $this->RequestLiveLTLQuote($shipments_array, $service_code);
-                $shipping_total = floatval($shipping_total) + floatval($quote_amount['total']);
+                $shipping_total += floatval($quote_amount['total']);
             }
         } else {
             //Regular Carrier Quote
             if ($demo) {
                 $quote_amount = $this->RequestDemoCarrierShipmentQuote($shipments_array);
-                $shipping_total = floatval($shipping_total) + floatval($quote_amount);
-                echo "Demo LTL Quote: " . $quote_amount;
+                $shipping_total += floatval($quote_amount);
+                echo "Demo Carrier Quote: " . $quote_amount;
             } else {
+                echo "NOT DEMO!";
                 $quote_amount = $this->RequestLiveCarrierShipmentQuote();
                 $shipping_total = floatval($shipping_total) + floatval($quote_amount);
                 echo "Live LTL Quote: " . $quote_amount;
@@ -1221,7 +1214,85 @@ class ShipEngineHandler implements ShippingInterface
                 );
 
                 array_push($newCartItems, $new_cart_item);
-                array_push($shipments_array, $new_cart_item);
+                //Check Individual Items - If Under Weight Limit, 
+                if (doubleval($weight) < doubleval($shipment_weight_limit)) {
+                    //Check If Total Weight Exceeds Limit
+                    if (doubleval($totalWeight) > doubleval($shipment_weight_limit)) {
+                        //If So -> Push To Shipment Array
+                        //Add Item To New Cart tems
+                        $weightTotal = 0;
+                        $count = 1;
+                        //Loop Through Multiplying weight X qty numbers to see how many can fit in a package
+                        for ($i = 1; $i < intval($item['qty']); $i++) {
+                            if (doubleval($weight) * intval($i) < doubleval($shipment_weight_limit)) {
+                                $count = intval($i);
+                                $weightTotal = doubleval($weight) * intval($i);
+                            }
+                        }
+
+                        $new_cart_item = array(
+                            'uniqId' => $item['uniqId'],
+                            'id' => $item['id'],
+                            'name' => $item['name'],
+                            'length' => $length,
+                            'width' => $width,
+                            'height' => $height,
+                            'weight' => $weight,
+                            'weight_total' => $weightTotal,
+                            'ship_type' => $item['ship_type'],
+                            'price' => $item['price'],
+                            'qty' => $count
+                        );
+                        array_push($newCartItems, $new_cart_item);
+                        array_push($current_shipment_items, $new_cart_item);
+                        array_push($shipments_array, $current_shipment_items);
+                        //Reset Current Shipment Items
+                        $current_shipment_items = array();
+                        //Add New Cart ITem
+                    } else {
+                        //Add Item To New Cart tems
+                        $new_cart_item = array(
+                            'uniqId' => $item['uniqId'],
+                            'id' => $item['id'],
+                            'name' => $item['name'],
+                            'length' => $length,
+                            'width' => $width,
+                            'height' => $height,
+                            'weight' => $weight,
+                            'total_length' => $length_with_qty,
+                            'total_width' => $width_with_qty,
+                            'total_height' => $height_with_qty,
+                            'weight_total' => $weight_with_qty,
+                            'ship_type' => $item['ship_type'],
+                            'price' => $item['price'],
+                            'qty' => $item['qty']
+                        );
+                        array_push($newCartItems, $new_cart_item);
+                        //If Not -> 
+                        array_push($current_shipment_items, $new_cart_item);
+                    }
+                } else {
+                    $new_cart_item = array(
+                        'uniqId' => $item['uniqId'],
+                        'id' => $item['id'],
+                        'name' => $item['name'],
+                        'length' => $length,
+                        'width' => $width,
+                        'height' => $height,
+                        'weight' => $weight,
+                        'total_length' => $length_with_qty,
+                        'total_width' => $width_with_qty,
+                        'total_height' => $height_with_qty,
+                        'weight_total' => $weight_with_qty,
+                        'ship_type' => $item['ship_type'],
+                        'price' => $item['price'],
+                        'qty' => $item['qty']
+                    );
+                    array_push($newCartItems, $new_cart_item);
+                    //Add Shipment To Generate Label For
+                    array_push($shipments_array, $new_cart_item);
+                    $current_shipment_items = array();
+                }
                 //Check If Over Weight Limit
             } catch (Exception $ex) {
                 $error = true;

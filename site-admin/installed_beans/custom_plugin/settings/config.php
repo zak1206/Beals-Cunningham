@@ -1,7 +1,7 @@
 <?php
 
 ///GET SITE SETTINGS//
-$data = mysqli_connect("localhost","bcwebdev","BCss1957!@","plains_valley");
+$data = mysqli_connect("localhost", "u886267043_stellarwebdev", "BCss1957!@", "u886267043_stellar");
     $data->set_charset("utf8");
 
     $a = $data->query("SELECT timezone, error_reporting FROM site_settings WHERE id = '1'")or die($data->error);
@@ -22,7 +22,3 @@ $data = mysqli_connect("localhost","bcwebdev","BCss1957!@","plains_valley");
         ini_set('display_startup_errors', 1);
         error_reporting(E_ALL);
     }
-
-
-
-    ?>

@@ -32,6 +32,7 @@ $currentTimestamp = $dateTime->getTimestamp();
 
 $service_code = "stdn"; //$_COOKIE['shippingData']['service_code'];
 $shipping_charges = $engine->EstimateCartShippingCharges("Zak Rowton", $street1, $street2, $city, $state, $zip, $phone, $email, $service_code, true);
+echo var_dump($shipping_charges);
 $labels = $engine->CreateCartShippingLabels("Zak Rowton", $street1, $street2, $city, $state, $zip, $phone, $email);
 //echo var_dump($labels);
 
@@ -343,8 +344,9 @@ $html .= '
 
 //Create New Order In DB
 try {
+    $tracking_no = '98798sd-2342-23423nkj-23423';
     $itemsJson = json_encode($items, true);
-    $sql = "INSERT INTO `custom_equipment_shop_orders` (`purchase_num`, `first_name`, `last_name`, `email`, `phone`, `address`, `city`, `state`, `zip`, `ship_address`, `ship_city`, `ship_state`, `ship_zip`, `pickup_location`, `order_notes`, `items_list`, `purchase_price`, `date_sub`, `status`, `ship_type`, `ship_cost`, `ship_label_url`, `receipt`, `discounts`, `meta_deta`) VALUES ('" . $invoice_number . "', '" . $first_name . "', '" . $last_name . "', '" . $email . "', '" . $phone . "', '" . $street1 . " " . $street2 . "', '" . $city . "', '" . $state . "', '" . $zip . "', '" . $billing_address . "', '" . $billing_city . "', '" . $billing_state . "', '" . $billing_zip . "', '" . $cookieJson[0]['shop_location'] . "', 'no order notes', '" . $itemsJson . "', '" . number_format($true_total, 2, '.', ',') . "', " . $currentTimestamp . ", 'Pending', '" . $ship_type . "', '" . ($ship_type == "api_system" ? number_format($shipCost, 2, '.', ',') : 0.0) . "', '" . json_encode($labels) . "', '" . $html . "', '[{}]', '[{}]');";
+    $sql = "INSERT INTO `custom_equipment_shop_orders` (`purchase_num`, `first_name`, `last_name`, `email`, `phone`, `address`, `city`, `state`, `zip`, `ship_address`, `ship_city`, `ship_state`, `ship_zip`, `pickup_location`, `order_notes`, `items_list`, `purchase_price`, `date_sub`, `status`, `applied_tax`, `ship_type`, `ship_cost`, `ship_label_url`, `receipt`, `discounts`, `tracking_number`, `meta_deta`) VALUES ('" . $invoice_number . "', '" . $first_name . "', '" . $last_name . "', '" . $email . "', '" . $phone . "', '" . $street1 . " " . $street2 . "', '" . $city . "', '" . $state . "', '" . $zip . "', '" . $billing_address . "', '" . $billing_city . "', '" . $billing_state . "', '" . $billing_zip . "', '" . $cookieJson[0]['shop_location'] . "', 'no order notes', '" . $itemsJson . "', '" . number_format($true_total, 2, '.', ',') . "', " . $currentTimestamp . ", 'Pending', '" . $tax . "', '" . $ship_type . "', '" . $shipping_charges . "', '" . json_encode($labels) . "', '" . $html . "', '[{}]', '234234234234', '[{}]');";
     // Prepare the SQL statement
     $stmt = $data->query($sql);
 } catch (PDOException $e) {
