@@ -2277,6 +2277,16 @@ if ($act == 'store_settings') {
         $settingss = new EStore_Settings_Two();
         $shop_loc = $settingss->GetDefaultShopLocation();
         $do_tax_stuff = $settingss->GetDoTaxStuff() == 1 ? 'true' : 'false';
+        $do_shipping_calcs = $settingss->GetDoShippingCalculations() == 1 ? 'true' : 'false';
+        $create_labels = $settingss->CreateShippingLabels() == 1 ? 'true' : 'false';
+        $auto_create_labels = $settingss->AutoGenerateLabels() == 1 ? 'true' : 'false';
+        $demo_mode = $settingss->DEMO_MODE() == 1 ? 'true' : 'false';
+        $use_default_tax = $settingss->UseDefaultTaxRateIfTaxAPIFails() == 1 ? 'true' : 'false';
+        $use_default_ship_rate = $settingss->UseDefaultShippingRateIfTaxAPIFails() == 1 ? 'true' : 'false';
+        $show_estore_homepage = $settingss->ShowEStoreHomePage() == 1 ? 'true' : 'false';
+        $default_tax_rate = $settingss->DefaultTaxRate();
+        $default_shipping_rate = $settingss->DefaultShippingRate();
+
 
         $html = '<div class="theresults"></div>';
         $html .= '<div class="row"><div class="col-md-6"><h2 style="border-bottom: solid thin #efefef; max-width: 50%">E-STORE SETTINGS</h2></div><div class="col-md-6" style="text-align: right"></div></div><br>';
@@ -2285,20 +2295,160 @@ if ($act == 'store_settings') {
         $html .= '<tr>';
         $html .= '<th>Setting Name</th>';
         $html .= '<th>Setting Value</th>';
+        $html .= '<th class="text-center">Change/Toggle</th>';
         $html .= '</tr>';
         $html .= '</thead>';
 
         $html .= '<tr>
+                    <td>Default Tax Rate</td>
+                    <td id="default_tax_rate">' . ($default_tax_rate) . '</td>
+                    <td>
+                        <div class="row justify-content-center">
+                            <input class="form-control default_tax_rate w-25">
+                            <button class="btn btn-success btn-default_tax_rate ml-2" onclick="ToggleSetting(\'default_tax_rate\', \'null\')">Update</button>
+                        </div>
+                    </td>
+                </tr>';
+
+        $html .= '<tr>
+                    <td>Default Shipping Rate</td>
+                    <td id="default_shipping_rate">' . ($default_shipping_rate) . '</td>
+                    <td>
+                        <div class="row justify-content-center">
+                            <input class="form-control default_shipping_rate w-25">
+                            <button class="btn btn-success btn-update-location ml-2" onclick="ToggleSetting(\'default_shipping_rate\', \'null\')">Update</button>
+                        </div>
+                    </td>
+                </tr>';
+
+        $html .= '<tr>
                     <td>Default Store Location</td>
-                    <td>' . ($shop_loc) . '</td>
+                    <td id="default_shop_location">' . ($shop_loc) . '</td>
+                    <td>
+                        <div class="row justify-content-center">
+                            <input class="form-control default_shop_location w-25">
+                            <button class="btn btn-success btn-update-location ml-2" onclick="ToggleSetting(\'default_shop_location\', \'null\')">Update</button>
+                        </div>
+                    </td>
                 </tr>';
 
         $html .= '<tr>
                     <td>Do Tax Calculations</td>
-                    <td>' . ($do_tax_stuff) . '</td>
+                    <td id="do_tax_stuff">' . ($do_tax_stuff) . '</td>
+                    <td class="text-center"><button class="btn btn-' . ($do_tax_stuff == 'true' ? 'success' : 'danger') . ' do_tax_stuff" onclick="ToggleSetting(\'do_tax_stuff\', \'' . $do_tax_stuff . '\')">Toggle</button></td>
+                </tr>';
+
+        $html .= '<tr>
+                    <td>Do Shipping Calculations</td>
+                    <td id="do_shipping_calculations">' . ($do_shipping_calcs) . '</td>
+                    <td class="text-center"><button class="btn btn-' . ($do_shipping_calcs == 'true' ? 'success' : 'danger') . ' do_shipping_calculations" onclick="ToggleSetting(\'do_shipping_calculations\', \'' . $do_shipping_calcs . '\')">Toggle</button></td>
+                </tr>';
+
+        $html .= '<tr>
+                    <td>Create Shipping Labels</td>
+                    <td id="create_shipping_labels">' . ($create_labels) . '</td>
+                    <td class="text-center"><button class="btn btn-' . ($create_labels == 'true' ? 'success' : 'danger') . ' create_shipping_labels" onclick="ToggleSetting(\'create_shipping_labels\', \'' . $create_labels . '\')">Toggle</button></td>
+                </tr>';
+
+        $html .= '<tr>
+                    <td>Automatically Create Shipping Labels</td>
+                    <td id="auto_generate_labels">' . ($auto_create_labels) . '</td>
+                    <td class="text-center"><button class="btn btn-' . ($auto_create_labels == 'true' ? 'success' : 'danger') . ' auto_generate_labels" onclick="ToggleSetting(\'auto_generate_labels\', \'' . $auto_create_labels . '\')">Toggle</button></td>
+                </tr>';
+
+        $html .= '<tr style="background-color: yellow;">
+                    <td>DEMO MODE <b>   [USE WITH CAUTION]</b></td>
+                    <td id="demo_mode">' . ($demo_mode) . '</td>
+                    <td class="text-center"><button class="btn btn-' . ($demo_mode == 'true' ? 'success' : 'danger') . ' demo_mode" onclick="ToggleSetting(\'demo_mode\', \'' . $demo_mode . '\')">Toggle</button></td>
+                </tr>';
+
+        $html .= '<tr>
+                    <td>Use Default Tax Rate - If Zip-Tax Fails</td>
+                    <td id="continue_if_tax_api_fails">' . ($use_default_tax) . '</td>
+                    <td class="text-center"><button class="btn btn-' . ($use_default_tax == 'true' ? 'success' : 'danger') . ' continue_if_tax_api_fails" onclick="ToggleSetting(\'continue_if_tax_api_fails\', \'' . $use_default_tax . '\')">Toggle</button></td>
+                </tr>';
+
+        $html .= '<tr>
+                    <td>Use Default Shipping Rate - If Shipping API Calculations Fail</td>
+                    <td id="continue_if_tax_api_fails">' . ($use_default_ship_rate) . '</td>
+                    <td class="text-center"><button class="btn btn-' . ($use_default_ship_rate == 'true' ? 'success' : 'danger') . ' continue_if_shipping_api_fails" onclick="ToggleSetting(\'continue_if_shipping_api_fails\', \'' . $use_default_ship_rate . '\')">Toggle</button></td>
+                </tr>';
+
+        $html .= '<tr>
+                    <td>Show EStore Home Page</td>
+                    <td id="show_estore_homepage">' . ($show_estore_homepage) . '</td>
+                    <td class="text-center"><button class="btn btn-' . ($show_estore_homepage == 'true' ? 'success' : 'danger') . ' show_estore_homepage" onclick="ToggleSetting(\'show_estore_homepage\', \'' . $show_estore_homepage . '\')">Toggle</button></td>
                 </tr>';
 
         $html .= '</table>';
+
+        $html .= '<script>
+                    function ToggleSetting(column, current_val) {
+                        if (current_val == "null") {
+                            var current_val = $("." + column).val();
+                        }
+
+                        $.ajax({
+                            type: "POST",
+                            url: "update_setting.php",
+                            data: { column: column, value: current_val },
+                            success: function(response) {
+
+                                var button = $("." + column);
+                                var newVal = current_val == "true" ? \'false\' : \'true\';
+                                button.attr("onclick", "ToggleSetting(\'"+column+"\', \'"+newVal+"\')");
+
+                                if (button.hasClass("btn-success")){
+                                    button.removeClass("btn-success");
+                                    button.addClass("btn-danger");
+                                } else {
+                                    button.removeClass("btn-danger");
+                                    button.addClass("btn-success");
+                                }
+        
+                                $("#" + column).html(newVal);
+        
+                                $(".theresults").html("<div class=\"alert alert-success\"><strong>Your Settings Have Been Updated!</strong><br><p>"+column+" Has Been Updated!</p></div>");
+                                $(".theresults").show();
+        
+                                // Start timer to hide alert after 5 seconds
+                                setTimeout(function() {
+                                    $(".theresults").hide();
+                                }, 5000);
+                            },
+                            error: function(response) {
+
+                                if (column != "default_shop_location" && column != "default_tax_rate" && column != "default_shipping_rate"){
+                                    var button = $("." + column);
+                                    var newVal = current_val == "true" ? \'false\' : \'true\';
+                                    button.attr("onclick", "ToggleSetting(\'"+column+"\', \'"+newVal+"\')");
+
+                                    if (button.hasClass("btn-success")){
+                                        button.removeClass("btn-success");
+                                        button.addClass("btn-danger");
+                                    } else {
+                                        button.removeClass("btn-danger");
+                                        button.addClass("btn-success");
+                                    }
+
+                                    $("#" + column).html(newVal);
+                                } else {
+                                    var input = $("." + column);
+                                    $("#" + column).html(input.val());
+                                }
+        
+        
+                                $(".theresults").html("<div class=\"alert alert-success\"><strong>Awesome!</strong><br><p>"+column+" Has Been Updated!</p></div>");
+                                $(".theresults").show();
+        
+                                // Start timer to hide alert after 5 seconds
+                                setTimeout(function() {
+                                    $(".theresults").hide();
+                                }, 5000);
+                            }
+                        });
+                    }
+                </script>';
 
         $logger->log("Store_Settings() Completed Successfully!", "INFO");
     } catch (Exception $e) {
@@ -2559,7 +2709,7 @@ if ($act == 'modsalesreceipt') {
         $html .= '<input type="text" class=" col-6 form-control" name="receipt_img" id="receipt_img" placeholder="No Image" aria-label="Category Image" value="' . $b["receipt_img"] . '">
                 <div class="input-group-append"><button class="btn btn-light img-browser" data-setter="receipt_img" type="button" style="height: 50px;">Browse Images</button></div>
                      
-            <div class="col-6 imgprev receipt_img mb-3"><img style="background-image: url(\'../../img/no-image.jpg\'); background-position: center; background-size: contain; background-repeat: no-repeat width: 200px; height: 200px;" src="../../' . $b["receipt_img"] . '">
+            <div class="col-6 imgprev receipt_img mb-3"><img style="background-image: url(\'../../img/no-image.jpg\'); background-position: center; background-size: contain; background-repeat: no-repeat; width: 500px; height: 200px;" src="../../' . $b["receipt_img"] . '">
 
             </div>   
             </div>  
